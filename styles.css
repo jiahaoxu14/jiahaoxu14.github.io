@@ -38,11 +38,12 @@ a {
 
 #intro{
     /* background-color: aquamarine; */
+    width: 30%;
     margin: 0px 50px 0px 0px;
 }
 
 #aboutme {
-    /* background-color:white; */
+    /* background-color:aquamarine; */
     margin: 0px 50px 0px 100px;
     flex: 1;
 }
