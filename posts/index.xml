@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jiahao Xu</title>
+    <title>Posts on Jiahao Xu</title>
     <link>/posts/</link>
-    <description>Recent content on Jiahao Xu</description>
+    <description>Recent content in Posts on Jiahao Xu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>&amp;copy; &lt;a href=&#34;https://capricornxu.github.io/&#34;&gt;Jiahao Xu&lt;/a&gt;
+    <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;WANG Chucheng&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;MA Ruiqi&lt;/a&gt;
 </copyright>
-    <lastBuildDate>Mon, 27 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hypothesis Grammar Parser</title>
-      <link>/posts/hypoparser/</link>
-      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate>
+      <link>/posts/featured-image/</link>
+      <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/hypoparser/</guid>
+      <guid>/posts/featured-image/</guid>
       <description>This is a parser for The Grammar for Hypothesis-Driven Visual Analysis.
 The grammar is a Context Free Grammar.
-It uses Earley Parser algorithm to parse the input.</description>
+It uses Earley Parser algorithm to parse the input.
+DEMO</description>
     </item>
     
   </channel>
