@@ -47,10 +47,10 @@
     
     <item>
       <title>Hypothesis Grammar Parser</title>
-      <link>/posts/featured-image/</link>
+      <link>/posts/hypoparser/</link>
       <pubDate>Sat, 27 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/posts/featured-image/</guid>
+      <guid>/posts/hypoparser/</guid>
       <description>This is a parser for The Grammar for Hypothesis-Driven Visual Analysis.
 The grammar is a Context Free Grammar.
 It uses Earley Parser algorithm to parse the input.
