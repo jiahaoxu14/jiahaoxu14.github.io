@@ -217,10 +217,6 @@ nav a:focus-visible::after {
   animation-delay: 320ms;
 }
 
-.hero-copy > :nth-child(6) {
-  animation-delay: 380ms;
-}
-
 .eyebrow {
   display: flex;
   align-items: center;
@@ -302,16 +298,11 @@ h3 {
   line-height: 1.6;
 }
 
-.hero-actions,
 .social-links {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 0.75rem;
-}
-
-.hero-actions {
-  margin-top: 1.25rem;
 }
 
 .button {
@@ -367,9 +358,16 @@ h3 {
   stroke-width: 1.7;
 }
 
-.social-links a:last-child svg {
+.social-links .social-icon-fill {
   fill: currentColor;
   stroke: none;
+}
+
+.cv-icon-text {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1;
 }
 
 .social-links a:hover,
@@ -438,7 +436,7 @@ h3 {
 .publication-year {
   margin: 0.2rem 0 0;
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   font-variant-numeric: tabular-nums;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -464,6 +462,7 @@ h3 {
   margin-bottom: 0.6rem;
   font-size: clamp(1.35rem, 2.4vw, 1.85rem);
   line-height: 1.18;
+  text-wrap: wrap;
 }
 
 .publication-item h3 a {
@@ -493,6 +492,7 @@ h3 {
   color: var(--muted);
   font-size: clamp(1rem, 1.35vw, 1.08rem);
   line-height: 1.5;
+  text-wrap: wrap;
 }
 
 .publication-authors strong {
@@ -500,8 +500,52 @@ h3 {
 }
 
 .publication-venue {
-  max-width: 42rem;
+  max-width: none;
   margin-top: 0.25rem;
+}
+
+.hobbies-section {
+  border-top: 1px solid var(--line);
+}
+
+.hobbies-layout {
+  display: grid;
+  gap: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.hobby-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--ink);
+  list-style: none;
+}
+
+.hobby-list li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1rem;
+  align-items: baseline;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.hobby-list li + li {
+  padding-left: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.hobby-list span {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hobby-list h3 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
 }
 
 .contact-section {
@@ -644,6 +688,14 @@ h3 {
 
   .publication-year {
     margin-top: 0;
+  }
+
+  .hobby-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hobby-list li + li {
+    padding-left: 0;
   }
 }
 
