@@ -1,0 +1,125 @@
+% Academic CV updated from the existing resume, public papers, and local projects.
+% Content sources and remaining factual questions are recorded in README.md.
+% Build from the repository root with: make -C docs
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{microtype}
+\usepackage[margin=0.75in,top=0.65in,bottom=0.65in]{geometry}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{secondary}{gray}{0.30}
+\definecolor{rulegray}{gray}{0.75}
+\hypersetup{pdftitle={Jiahao Xu - Curriculum Vitae},pdfauthor={Jiahao Xu}}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\footnotesize\color{secondary} Jiahao Xu}
+\fancyfoot[R]{\footnotesize\color{secondary} Updated October 2026 \enspace\textbar{}\enspace \thepage}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{1em}
+\setlength{\footskip}{23pt}
+\raggedright
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{1pt}{\color{rulegray}\titlerule[0.3pt]}]
+\titlespacing*{\section}{0pt}{13pt}{7pt}
+\setlist[enumerate]{leftmargin=1.65em,label={[\arabic*]},
+  font=\small\color{secondary},labelsep=0.5em,topsep=4pt,itemsep=8pt,parsep=0pt}
+
+% Institution, location, degree, dates. Dates share the institution baseline.
+\newcommand{\cventry}[4]{%
+  \begin{tabularx}{\linewidth}{@{}Xr@{}}
+    \textbf{#1} & {\small #4} \\
+    #3 & {\small\color{secondary} #2}
+  \end{tabularx}\par
+}
+
+\begin{document}
+
+{\fontsize{27}{30}\selectfont\bfseries Jiahao Xu}\hfill
+{\small\color{secondary} Curriculum Vitae}\par
+\vspace{5pt}
+PhD Student, Computer Science \textbar{} Virginia Tech\par
+\vspace{3pt}
+{\small
+  \href{mailto:jiahao@vt.edu}{jiahao@vt.edu} \enspace\textbar{}\enspace
+  \href{https://jiahaoxu14.github.io/}{jiahaoxu14.github.io} \enspace\textbar{}\enspace
+  \href{https://github.com/jiahaoxu14}{github.com/jiahaoxu14}}\par
+
+\section*{Research Interests}
+Visual analytics, human--AI collaboration, and spatial sensemaking.
+I develop interactive systems that help people verify and revise AI-generated
+information, and investigate how AI agents can interpret and act within shared
+2D workspaces.
+
+\section*{Education}
+\cventry{Virginia Tech}{Blacksburg, VA}
+  {PhD in Computer Science \& Applications, in progress}{Aug. 2023 -- present}
+{\small Advisor: Chris North}\par
+\vspace{6pt}
+
+\cventry{Tufts University}{Medford, MA}
+  {MS in Computer Science}{Jan. 2021 -- May 2023}
+\vspace{6pt}
+
+\cventry{Chang'an University}{Xi'an, China}
+  {BE in Computer Science and Technology}{Sept. 2016 -- June 2020}
+{\small Exchange study, University of California, Irvine \hfill Apr. -- Oct. 2019}
+
+\section*{Publications}
+{\small\bfseries Peer-reviewed publications}\par
+\begin{enumerate}
+  \item {\small \textbf{Jiahao Xu}, Wei Liu, Yang Liu, Eric Krokos, Kirsten Whitley,
+    Xuan Wang, Rebecca Faust, and Chris North.}\par
+    Spatial Visual Analytics for Multi-Document Summary Verification.\par
+    {\small \textit{IEEE VIS}, 2026. Full paper, accepted.
+    \href{https://arxiv.org/abs/2607.28853}{[arXiv]}}
+
+  \item {\small Yang Liu, Xuxin Tang, \textbf{Jiahao Xu}, and Chris North.}\par
+    Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image
+    Clustering.\par
+    {\small \textit{IEEE VIS}, 2026. Short paper, accepted.
+    \href{https://arxiv.org/abs/2606.28517}{[arXiv]}}
+
+  \item {\small Edward W. He, Vanessa Bellotti, Alexandra Scott, \textbf{Jiahao Xu},
+    Ashley Suh, Jen Rogers, and Remco Chang.}\par
+    The Effects of Belief Elicitation in Visual Data Analysis: A Longitudinal
+    Classroom Study.\par
+    {\small \textit{IEEE Transactions on Visualization and Computer Graphics},
+    32(2):2379--2393, 2026.
+    \href{https://doi.org/10.1109/TVCG.2025.3626411}{[DOI]}}
+\end{enumerate}
+
+{\small\bfseries Preprints}\par
+\begin{enumerate}[resume]
+  \item {\small Haohui Wang, \textbf{Jiahao Xu}, Wangzhi Zhan, Tong Zeng, Dongqi Fu,
+    Hong Li, Swastik Roy, Naren Ramakrishnan, Chris North, Jian Kang,
+    Yujun Yan, and Dawei Zhou.}\par
+    Overcoming Prior Barriers: Supervised Fine-Tuning under Long-Tail
+    Distribution.\par
+    {\small \textit{arXiv preprint}, 2026.
+    \href{https://arxiv.org/abs/2610.12345}{arXiv:2610.12345}}
+\end{enumerate}
+
+\section*{Teaching Experience}
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+  \textbf{Virginia Tech} & {\small Teaching Assistant}
+\end{tabularx}
+CS 5764: Information Visualization\par
+CS 3724: Human-Computer Interaction\par
+\vspace{6pt}
+
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+  \textbf{Tufts University} & {\small Teaching Assistant}
+\end{tabularx}
+CS 178: Visual Analytics\par
+CS 170: Computational Theory\par
+CS 114: Network Security\par
+
+\end{document}
