@@ -11,6 +11,8 @@ Visualization. Dates are omitted from all TA entries at the author's request.
 
 - The website and `../../DC_2026VIS/main.tex` in the neighboring project establish
   the current PhD focus: human-AI co-reasoning in shared 2D workspaces.
+- [CanvasObs on arXiv](https://arxiv.org/abs/2610.27176) supplies the title,
+  author order, and VISxGenAI 2026 workshop venue, co-located with IEEE VIS.
 - [SVS on arXiv](https://arxiv.org/abs/2607.28853) and its camera-ready source in
   the neighboring `SVS_2026VIS` project support the full-paper citation.
 - [CriterionSI on arXiv](https://arxiv.org/abs/2606.28517) and the

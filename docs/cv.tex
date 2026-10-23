@@ -6,7 +6,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{mathpazo}
 \usepackage{microtype}
-\usepackage[margin=0.75in,top=0.65in,bottom=0.65in]{geometry}
+\usepackage[margin=0.75in,top=0.55in,bottom=0.55in]{geometry}
 \usepackage{enumitem}
 \usepackage{tabularx}
 \usepackage{titlesec}
@@ -28,9 +28,9 @@
 \setlength{\footskip}{23pt}
 \raggedright
 \titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{1pt}{\color{rulegray}\titlerule[0.3pt]}]
-\titlespacing*{\section}{0pt}{10pt}{7pt}
+\titlespacing*{\section}{0pt}{8pt}{5pt}
 \setlist[enumerate]{leftmargin=1.65em,label={[\arabic*]},
-  font=\small\color{secondary},labelsep=0.5em,topsep=4pt,itemsep=8pt,parsep=0pt}
+  font=\small\color{secondary},labelsep=0.5em,topsep=2pt,itemsep=4pt,parsep=0pt}
 
 % Institution, location, degree, dates. Dates share the institution baseline.
 \newcommand{\cventry}[4]{%
@@ -62,12 +62,12 @@ information, and investigate how AI agents can interpret and act within shared
 \cventry{Virginia Tech}{Blacksburg, VA}
   {PhD in Computer Science \& Applications, in progress}{Aug. 2023 -- present}
 {\small Advisor: Chris North}\par
-\vspace{6pt}
+\vspace{4pt}
 
 \cventry{Tufts University}{Medford, MA}
   {MS in Computer Science}{Jan. 2021 -- May 2023}
 {\small Advisor: Remco Chang}\par
-\vspace{6pt}
+\vspace{4pt}
 
 \cventry{Chang'an University}{Xi'an, China}
   {BE in Computer Science and Technology}{Sept. 2016 -- June 2020}
@@ -76,6 +76,12 @@ information, and investigate how AI agents can interpret and act within shared
 \section*{Publications}
 {\small\bfseries Peer-reviewed publications}\par
 \begin{enumerate}
+  \item \href{https://arxiv.org/abs/2610.27176}{CanvasObs: Structured Spatial
+    Observation for Agent Editing on 2D Infinite Canvases.}\par
+    {\small \textbf{Jiahao Xu}, Haohui Wang, Rebecca Faust, Dawei Zhou,
+    and Chris North.}\par
+    {\small \textit{VISxGenAI}, 2026. Workshop at IEEE VIS.}
+
   \item \href{https://arxiv.org/abs/2607.28853}{Spatial Visual Analytics for
     Multi-Document Summary Verification.}\par
     {\small \textbf{Jiahao Xu}, Wei Liu, Yang Liu, Eric Krokos, Kirsten Whitley,
@@ -111,7 +117,7 @@ information, and investigate how AI agents can interpret and act within shared
 \end{tabularx}
 CS 5764: Information Visualization\par
 CS 3724: Human-Computer Interaction\par
-\vspace{6pt}
+\vspace{4pt}
 
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
   \textbf{Tufts University} & {\small Teaching Assistant}
