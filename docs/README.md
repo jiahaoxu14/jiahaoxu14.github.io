@@ -35,18 +35,20 @@ has been inferred from a draft, proposal, presentation deck, or folder name.
 ## Layout and publication style
 
 The CV uses Palatino, a left-aligned header, consistent institution/date columns,
-and light section rules. Publication entries put authors, title, and venue on
+and light section rules. Publication entries put title, authors, and venue on
 separate lines. Full author lists and their original order are retained; only
 Jiahao's name is bold within each citation. Published and accepted papers are
-separate from preprints, acceptance status remains explicit, and paper links
-use short arXiv or DOI labels. Bibliographic dates use years consistently.
+separate from preprints, acceptance status remains explicit, and paper titles
+link directly to arXiv or DOI pages without separate link labels. Bibliographic
+dates use years consistently.
 
-The author-first citation style was informed by the public CVs of
+The original citation style was informed by the public CVs of
 [Minsuk Chang](https://www.minsukchang.info/documents/cv.pdf),
 [Yiren Liu](https://yiren-liu.github.io/cv.pdf), and
 [Zeyu Xiong](https://www.zeyuxiong.com/uploads/resume.pdf), reviewed in October
 2026. Their formats vary; these references informed the citation conventions,
-not the CV's factual content.
+not the CV's factual content. The current title-first order and removal of
+separate link labels follow the author's preferences.
 
 ## Local tools
 
