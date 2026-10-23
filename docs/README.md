@@ -15,8 +15,8 @@ Visualization. Dates are omitted from all TA entries at the author's request.
   the neighboring `SVS_2026VIS` project support the full-paper citation.
 - [CriterionSI on arXiv](https://arxiv.org/abs/2606.28517) and the
   [IEEE VIS 2026 program](https://aproxy.ieeevis.org/year/2026/program/papers/)
-  confirm the short paper. Both VIS papers are listed as accepted; the conference
-  is still upcoming as of this update.
+  confirm the short paper. The CV lists the conference and paper type without
+  a separate acceptance label, at the author's request.
 - The [belief-elicitation article record](https://pubmed.ncbi.nlm.nih.gov/41150245/)
   supplies the journal volume, issue, pages, and February 2026 publication date.
   Some indexing records spell Jiahao's name "Jiaohao"; the CV retains the spelling
@@ -37,8 +37,8 @@ has been inferred from a draft, proposal, presentation deck, or folder name.
 The CV uses Palatino, a left-aligned header, consistent institution/date columns,
 and light section rules. Publication entries put title, authors, and venue on
 separate lines. Full author lists and their original order are retained; only
-Jiahao's name is bold within each citation. Published and accepted papers are
-separate from preprints, acceptance status remains explicit, and paper titles
+Jiahao's name is bold within each citation. Peer-reviewed papers are
+separate from preprints, and paper titles
 link directly to arXiv or DOI pages without separate link labels. Bibliographic
 dates use years consistently.
 
