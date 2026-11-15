@@ -688,11 +688,11 @@ nav a[aria-current="page"]::after {
 }
 
 .cv-page {
-  --cv-gap: 1.25rem;
-  width: min(100% - 3rem, 56rem);
-  margin: 3.5rem auto 2rem;
-  font-size: 1.05rem;
-  line-height: 1.55;
+  --cv-gap: 1rem;
+  width: min(100% - 3rem, 64rem);
+  margin: 2rem auto;
+  font-size: 1.125rem;
+  line-height: 1.45;
 }
 
 .cv-header {
@@ -700,12 +700,12 @@ nav a[aria-current="page"]::after {
   justify-content: space-between;
   align-items: start;
   gap: 2rem;
-  padding-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .cv-header h1 {
   max-width: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   line-height: 1.1;
 }
@@ -723,7 +723,7 @@ nav a[aria-current="page"]::after {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem 1rem;
-  margin: 0.75rem 0 0;
+  margin: 0.5rem 0 0;
   padding: 0;
   list-style: none;
 }
@@ -734,20 +734,20 @@ nav a[aria-current="page"]::after {
 }
 
 .cv-download p {
-  margin-top: 0.65rem;
+  margin-top: 0.5rem;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 .cv-section {
-  padding-block: 1.75rem 2rem;
+  padding-block: var(--cv-gap);
   border-top: 1px solid var(--line);
 }
 
 .cv-section h2 {
   max-width: none;
-  margin-bottom: var(--cv-gap);
-  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.15rem;
   line-height: 1.2;
 }
 
@@ -758,10 +758,10 @@ nav a[aria-current="page"]::after {
 .cv-section h3 {
   margin: 0;
   font-family: inherit;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: normal;
-  line-height: 1.5;
+  line-height: 1.35;
 }
 
 .cv-entry + .cv-entry {
@@ -770,6 +770,7 @@ nav a[aria-current="page"]::after {
 
 .cv-entry-heading {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
   gap: 0.25rem 1.5rem;
@@ -779,7 +780,7 @@ nav a[aria-current="page"]::after {
 .cv-meta,
 .cv-location {
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.0625rem;
 }
 
 .cv-location {
@@ -793,9 +794,9 @@ nav a[aria-current="page"]::after {
 }
 
 .cv-section .cv-subheading {
-  margin-bottom: var(--cv-gap);
+  margin-bottom: 0.5rem;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1.125rem;
 }
 
 .cv-publications {
@@ -804,7 +805,7 @@ nav a[aria-current="page"]::after {
 }
 
 .cv-publications + .cv-subheading {
-  margin-top: 1.75rem;
+  margin-top: 1.25rem;
 }
 
 .cv-publications li {
@@ -812,22 +813,27 @@ nav a[aria-current="page"]::after {
 }
 
 .cv-publications li + li {
-  margin-top: 1.5rem;
+  margin-top: var(--cv-gap);
 }
 
 .cv-publications li::marker {
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .cv-publications .cv-paper-title {
-  margin-bottom: 0.3rem;
-  font-size: 1.12rem;
+  margin-bottom: 0.25rem;
+  font-family: "Newsreader", Georgia, "Times New Roman", serif;
+  font-optical-sizing: auto;
+  font-size: clamp(1.35rem, 2.4vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
 }
 
 .cv-publications .publication-links {
-  margin-top: 0.35rem;
-  font-size: 0.95rem;
+  margin-top: 0.25rem;
+  font-size: 1.0625rem;
 }
 
 .cv-courses {
@@ -841,10 +847,10 @@ nav a[aria-current="page"]::after {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1rem;
-  padding-top: 1.5rem;
+  padding-top: var(--cv-gap);
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1.0625rem;
 }
 
 @media (max-width: 48rem) {
@@ -916,20 +922,24 @@ nav a[aria-current="page"]::after {
 
   .cv-page {
     width: calc(100% - 2rem);
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   .cv-header {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--cv-gap);
   }
 
   .cv-download {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
     text-align: left;
   }
 
-  .cv-entry-heading {
-    flex-direction: column;
+  .cv-download p {
+    margin-top: 0;
   }
 }
 

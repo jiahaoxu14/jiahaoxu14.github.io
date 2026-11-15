@@ -11,8 +11,9 @@ The author confirmed serving as a TA for Chris North's CS 5764: Information
 Visualization. Dates are omitted from all TA entries at the author's request.
 The author confirmed presenting SVS and CanvasObs at IEEE VIS 2026 and requested
 the IEEE VIS 2026 Doctoral Colloquium entry under Honors & Recognition.
-Slide links stay with their publication entries and use the concise label
-"Slides (VIS 2026)" at the author's request.
+In the HTML CV, slide links stay with their publication entries and use the concise
+label "Slides (VIS 2026)" at the author's request. The PDF is intended for reading
+without clicking links; it omits PDF and slide links and their icons.
 
 ## Content sources
 
@@ -55,17 +56,19 @@ with a note that it will appear in IEEE TVCG. This reflects the
 [IEEE VIS publication policy](https://lisa.ieeevis.org/year/2026/info/call-participation/call-for-participation/),
 under which full papers are published in a TVCG special issue. No journal volume,
 publication year, or page numbers have been inferred. Paper titles are plain text.
-Separate PDF links open arXiv PDFs or IEEE's PDF viewer for the belief-elicitation
-article; the latter may require institutional access. Each paper has a dedicated
-links row below its venue, with PDF and slide links together where slides are
-available. Bibliographic dates use years consistently.
+In the HTML CV, separate PDF links open arXiv PDFs or IEEE's PDF viewer for the
+belief-elicitation article; the latter may require institutional access. Each
+paper has a dedicated links row below its venue, with PDF and slide links together
+where slides are available. The downloadable PDF ends each citation with its
+venue and retains contact details and advisor names as plain text, without
+embedded hyperlinks. Bibliographic dates use years consistently.
 
 The original citation style was informed by the public CVs of
 [Minsuk Chang](https://www.minsukchang.info/documents/cv.pdf),
 [Yiren Liu](https://yiren-liu.github.io/cv.pdf), and
 [Zeyu Xiong](https://www.zeyuxiong.com/uploads/resume.pdf), reviewed in October
 2026. Their formats vary; these references informed the citation conventions,
-not the CV's factual content. The current title-first order and separate PDF and
+not the CV's factual content. The current title-first order and HTML-only PDF and
 slide links follow the author's preferences.
 
 ## Local tools
