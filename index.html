@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Newsreader:wght@600;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap"
       rel="stylesheet"
     >
-    <link rel="stylesheet" href="/css/styles.css?v=20261115-paper-links">
+    <link rel="stylesheet" href="/css/styles.css?v=20261115-publication-groups">
     <script src="/js/main.js" defer></script>
   </head>
   <body>
@@ -115,146 +115,183 @@
             <h2 id="publications-title">Publications</h2>
           </header>
 
-          <ol class="publication-list">
-            <li class="publication-item">
-              <p class="publication-year">2026</p>
-              <!-- Teaser source: https://arxiv.org/html/2610.27176v1/figures/teaser-infinite-canvas.png -->
-              <a
-                class="publication-teaser"
-                href="https://arxiv.org/abs/2610.27176"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/images/canvasobs-teaser.png"
-                  alt="CanvasObs combining visual context with object identities, state, relations, and offscreen bounds for canvas editing"
-                  width="2083"
-                  height="755"
-                  loading="lazy"
-                  decoding="async"
+          <section class="publication-group" aria-labelledby="conference-papers">
+            <h3 id="conference-papers">Conference Papers</h3>
+            <ul class="publication-list" role="list">
+              <li class="publication-item">
+                <!-- Teaser source: https://arxiv.org/html/2607.28853v1/teaser.png -->
+                <a
+                  class="publication-teaser"
+                  href="https://arxiv.org/abs/2607.28853"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-              </a>
-              <article>
-                <h3>CanvasObs: Structured Spatial Observation for Agent Editing on 2D Infinite Canvases</h3>
-                <p class="publication-authors">
-                  <strong>Jiahao Xu</strong>, Haohui Wang, Rebecca Faust, Dawei Zhou, and Chris North
-                </p>
-                <p class="publication-venue">
-                  VISxGenAI 2026 (Workshop at IEEE VIS).
-                </p>
-                <p class="publication-venue publication-links">
-                  <a class="publication-link" href="https://arxiv.org/pdf/2610.27176">
-                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
-                      <path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"></path>
-                    </svg>
-                    <span>PDF</span>
-                  </a>
-                  <a class="publication-link" href="/slides/canvasobs/">
-                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
-                      <path d="M3 4h18v12H3z M8 21l4-5 4 5"></path>
-                    </svg>
-                    <span>Slides (VIS 2026)</span>
-                  </a>
-                </p>
-              </article>
-            </li>
-            <li class="publication-item">
-              <!-- Teaser source: https://arxiv.org/html/2607.28853v1/teaser.png -->
-              <a
-                class="publication-teaser"
-                href="https://arxiv.org/abs/2607.28853"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/images/summary-verification-teaser.png"
-                  alt="Summary Verification Space linking summary claims to supporting and contradicting source evidence"
-                  width="1418"
-                  height="1063"
-                  loading="lazy"
-                  decoding="async"
+                  <img
+                    src="/images/summary-verification-teaser.png"
+                    alt="Summary Verification Space linking summary claims to supporting and contradicting source evidence"
+                    width="1418"
+                    height="1063"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </a>
+                <article>
+                  <h4>Spatial Visual Analytics for Multi-Document Summary Verification</h4>
+                  <p class="publication-authors">
+                    <strong>Jiahao Xu</strong>, Wei Liu, Yang Liu, Eric Krokos, Kirsten Whitley, Xuan Wang, Rebecca Faust, and Chris North
+                  </p>
+                  <p class="publication-venue">
+                    IEEE VIS 2026 (Full Paper); to appear in IEEE TVCG.
+                  </p>
+                  <p class="publication-venue publication-links">
+                    <a class="publication-link" href="https://arxiv.org/pdf/2607.28853">
+                      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                        <path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"></path>
+                      </svg>
+                      <span>PDF</span>
+                    </a>
+                    <a class="publication-link" href="/slides/svs/">
+                      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                        <path d="M3 4h18v12H3z M8 21l4-5 4 5"></path>
+                      </svg>
+                      <span>Slides (VIS 2026)</span>
+                    </a>
+                  </p>
+                </article>
+              </li>
+              <li class="publication-item">
+                <!-- Teaser source: https://arxiv.org/html/2606.28517v2/teaser-short.png -->
+                <a
+                  class="publication-teaser"
+                  href="https://arxiv.org/abs/2606.28517"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-              </a>
-              <article>
-                <h3>Spatial Visual Analytics for Multi-Document Summary Verification</h3>
-                <p class="publication-authors">
-                  <strong>Jiahao Xu</strong>, Wei Liu, Yang Liu, Eric Krokos, Kirsten Whitley, Xuan Wang, Rebecca Faust, and Chris North
-                </p>
-                <p class="publication-venue">
-                  IEEE VIS 2026.
-                </p>
-                <p class="publication-venue publication-links">
-                  <a class="publication-link" href="https://arxiv.org/pdf/2607.28853">
-                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
-                      <path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"></path>
-                    </svg>
-                    <span>PDF</span>
-                  </a>
-                  <a class="publication-link" href="/slides/svs/">
-                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
-                      <path d="M3 4h18v12H3z M8 21l4-5 4 5"></path>
-                    </svg>
-                    <span>Slides (VIS 2026)</span>
-                  </a>
-                </p>
-              </article>
-            </li>
-            <li class="publication-item">
-              <!-- Teaser source: https://arxiv.org/html/2606.28517v2/teaser-short.png -->
-              <a
-                class="publication-teaser"
-                href="https://arxiv.org/abs/2606.28517"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/images/criterionsi-teaser.png"
-                  alt="CriterionSI inferring a clustering criterion from image drags and reprojecting images into groups"
-                  width="1357"
-                  height="518"
-                  loading="lazy"
-                  decoding="async"
+                  <img
+                    src="/images/criterionsi-teaser.png"
+                    alt="CriterionSI inferring a clustering criterion from image drags and reprojecting images into groups"
+                    width="1357"
+                    height="518"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </a>
+                <article>
+                  <h4>Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering</h4>
+                  <p class="publication-authors">
+                    Yang Liu, Xuxin Tang, <strong>Jiahao Xu</strong>, and Chris North
+                  </p>
+                  <p class="publication-venue">
+                    IEEE VIS 2026 (Short Paper).
+                  </p>
+                  <p class="publication-venue publication-links">
+                    <a class="publication-link" href="https://arxiv.org/pdf/2606.28517">
+                      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                        <path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"></path>
+                      </svg>
+                      <span>PDF</span>
+                    </a>
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </section>
+
+          <section class="publication-group" aria-labelledby="journal-articles">
+            <h3 id="journal-articles">Journal Articles</h3>
+            <ul class="publication-list" role="list">
+              <li class="publication-item">
+                <article>
+                  <h4>The Effects of Belief Elicitation in Visual Data Analysis: A Longitudinal Classroom Study</h4>
+                  <p class="publication-authors">
+                    Edward W. He, Vanessa Bellotti, Alexandra Scott,
+                    <strong>Jiahao Xu</strong>, Ashley Suh, Jen Rogers, and Remco Chang
+                  </p>
+                  <p class="publication-venue">
+                    IEEE Transactions on Visualization and Computer Graphics (Volume: 32, Issue: 2, February 2026).
+                  </p>
+                  <p class="publication-venue publication-links">
+                    <a class="publication-link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11219244">
+                      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                        <path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"></path>
+                      </svg>
+                      <span>PDF</span>
+                    </a>
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </section>
+
+          <section class="publication-group" aria-labelledby="workshop-papers">
+            <h3 id="workshop-papers">Workshop Papers</h3>
+            <ul class="publication-list" role="list">
+              <li class="publication-item">
+                <!-- Teaser source: https://arxiv.org/html/2610.27176v1/figures/teaser-infinite-canvas.png -->
+                <a
+                  class="publication-teaser"
+                  href="https://arxiv.org/abs/2610.27176"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-              </a>
-              <article>
-                <h3>Drag, Infer, Reproject: Grounding LLMs through Spatial Interaction for Image Clustering</h3>
-                <p class="publication-authors">
-                  Yang Liu, Xuxin Tang, <strong>Jiahao Xu</strong>, and Chris North
-                </p>
-                <p class="publication-venue">
-                  IEEE VIS 2026 (Short Paper).
-                </p>
-                <p class="publication-venue publication-links">
-                  <a class="publication-link" href="https://arxiv.org/pdf/2606.28517">
-                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
-                      <path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"></path>
-                    </svg>
-                    <span>PDF</span>
-                  </a>
-                </p>
-              </article>
-            </li>
-            <li class="publication-item">
-              <article>
-                <h3>The Effects of Belief Elicitation in Visual Data Analysis: A Longitudinal Classroom Study</h3>
-                <p class="publication-authors">
-                  Edward W. He, Vanessa Bellotti, Alexandra Scott,
-                  <strong>Jiahao Xu</strong>, Ashley Suh, Jen Rogers, and Remco Chang
-                </p>
-                <p class="publication-venue">
-                  IEEE Transactions on Visualization and Computer Graphics (Volume: 32, Issue: 2, February 2026).
-                </p>
-                <p class="publication-venue publication-links">
-                  <a class="publication-link" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11219244">
-                    <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
-                      <path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"></path>
-                    </svg>
-                    <span>PDF</span>
-                  </a>
-                </p>
-              </article>
-            </li>
-          </ol>
+                  <img
+                    src="/images/canvasobs-teaser.png"
+                    alt="CanvasObs combining visual context with object identities, state, relations, and offscreen bounds for canvas editing"
+                    width="2083"
+                    height="755"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </a>
+                <article>
+                  <h4>CanvasObs: Structured Spatial Observation for Agent Editing on 2D Infinite Canvases</h4>
+                  <p class="publication-authors">
+                    <strong>Jiahao Xu</strong>, Haohui Wang, Rebecca Faust, Dawei Zhou, and Chris North
+                  </p>
+                  <p class="publication-venue">
+                    VISxGenAI 2026 (Workshop at IEEE VIS).
+                  </p>
+                  <p class="publication-venue publication-links">
+                    <a class="publication-link" href="https://arxiv.org/pdf/2610.27176">
+                      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                        <path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"></path>
+                      </svg>
+                      <span>PDF</span>
+                    </a>
+                    <a class="publication-link" href="/slides/canvasobs/">
+                      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                        <path d="M3 4h18v12H3z M8 21l4-5 4 5"></path>
+                      </svg>
+                      <span>Slides (VIS 2026)</span>
+                    </a>
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </section>
+
+          <section class="publication-group" aria-labelledby="preprints">
+            <h3 id="preprints">Preprints</h3>
+            <ul class="publication-list" role="list">
+              <li class="publication-item">
+                <article>
+                  <h4>Overcoming Prior Barriers: Supervised Fine-Tuning under Long-Tail Distribution</h4>
+                  <p class="publication-authors">
+                    Haohui Wang, <strong>Jiahao Xu</strong>, Wangzhi Zhan, Tong Zeng, Dongqi Fu, Hong Li, Swastik Roy, Naren Ramakrishnan, Chris North, Jian Kang, Yujun Yan, and Dawei Zhou
+                  </p>
+                  <p class="publication-venue">arXiv preprint, 2026.</p>
+                  <p class="publication-venue publication-links">
+                    <a class="publication-link" href="https://arxiv.org/pdf/2610.12345">
+                      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+                        <path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"></path>
+                      </svg>
+                      <span>PDF</span>
+                    </a>
+                  </p>
+                </article>
+              </li>
+            </ul>
+          </section>
         </div>
       </section>
 
