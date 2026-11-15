@@ -511,6 +511,13 @@ h3 {
   text-wrap: wrap;
 }
 
+.publication-number {
+  color: var(--muted);
+  font-size: 0.75em;
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+
 .publication-authors,
 .publication-venue {
   margin: 0;
