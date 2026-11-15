@@ -5,11 +5,14 @@ November 2026. It contains research interests, education, publications,
 honors and recognition, and teaching. The original resume supplied the degree
 dates and teaching history.
 Research Experience and Technical Skills were removed at the author's request.
+The author confirmed that Rebecca Faust now advises the PhD alongside Chris North.
+Both are listed under "Advisors" at the author's request.
 The author confirmed serving as a TA for Chris North's CS 5764: Information
 Visualization. Dates are omitted from all TA entries at the author's request.
 The author confirmed presenting SVS and CanvasObs at IEEE VIS 2026 and requested
 the IEEE VIS 2026 Doctoral Colloquium entry under Honors & Recognition.
-Presentation notes and slide links stay with their publication entries.
+Slide links stay with their publication entries and use the concise label
+"Slides (VIS 2026)" at the author's request.
 
 ## Content sources
 
@@ -42,20 +45,28 @@ The presentation notes above are based on the author's confirmation.
 ## Layout and publication style
 
 The CV uses Palatino, a left-aligned header, consistent institution/date columns,
-and light section rules. Publication entries put title, authors, and venue on
+and light section rules. Locations sit beside university names, separate from
+advisor details. Publication entries put title, authors, and venue on
 separate lines. Full author lists and their original order are retained; only
-Jiahao's name is bold within each citation. Peer-reviewed papers are
-separate from preprints, and paper titles
-link directly to arXiv or DOI pages without separate link labels. Bibliographic
-dates use years consistently.
+Jiahao's name is bold within each citation. Publications are grouped as Conference
+Papers, Journal Articles, Workshop Papers, and Preprints, in that order. At the author's
+request, SVS appears once under Conference Papers as an IEEE VIS 2026 full paper,
+with a note that it will appear in IEEE TVCG. This reflects the
+[IEEE VIS publication policy](https://lisa.ieeevis.org/year/2026/info/call-participation/call-for-participation/),
+under which full papers are published in a TVCG special issue. No journal volume,
+publication year, or page numbers have been inferred. Paper titles are plain text.
+Separate PDF links open arXiv PDFs or IEEE's PDF viewer for the belief-elicitation
+article; the latter may require institutional access. Each paper has a dedicated
+links row below its venue, with PDF and slide links together where slides are
+available. Bibliographic dates use years consistently.
 
 The original citation style was informed by the public CVs of
 [Minsuk Chang](https://www.minsukchang.info/documents/cv.pdf),
 [Yiren Liu](https://yiren-liu.github.io/cv.pdf), and
 [Zeyu Xiong](https://www.zeyuxiong.com/uploads/resume.pdf), reviewed in October
 2026. Their formats vary; these references informed the citation conventions,
-not the CV's factual content. The current title-first order and removal of
-separate link labels follow the author's preferences.
+not the CV's factual content. The current title-first order and separate PDF and
+slide links follow the author's preferences.
 
 ## Local tools
 

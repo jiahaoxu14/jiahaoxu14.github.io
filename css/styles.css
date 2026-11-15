@@ -510,27 +510,6 @@ h3 {
   text-wrap: wrap;
 }
 
-.publication-item h3 a {
-  text-decoration-color: transparent;
-  transition: text-decoration-color 180ms ease;
-}
-
-.publication-item h3 span {
-  display: inline-block;
-  font-size: 0.72em;
-  transition: transform 180ms ease;
-}
-
-.publication-item h3 a:hover,
-.publication-item h3 a:focus-visible {
-  text-decoration-color: currentColor;
-}
-
-.publication-item h3 a:hover span,
-.publication-item h3 a:focus-visible span {
-  transform: translate(0.12em, -0.12em);
-}
-
 .publication-authors,
 .publication-venue {
   margin: 0;
@@ -547,6 +526,30 @@ h3 {
 .publication-venue {
   max-width: none;
   margin-top: 0.25rem;
+}
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+}
+
+.publication-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+}
+
+.publication-link svg {
+  flex: none;
+  width: 1em;
+  height: 1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .hobbies-section {
@@ -773,9 +776,15 @@ nav a[aria-current="page"]::after {
 }
 
 .cv-dates,
-.cv-meta {
+.cv-meta,
+.cv-location {
   color: var(--muted);
   font-size: 1rem;
+}
+
+.cv-location {
+  font-weight: 400;
+  white-space: nowrap;
 }
 
 .cv-dates {
@@ -816,17 +825,7 @@ nav a[aria-current="page"]::after {
   font-size: 1.12rem;
 }
 
-.cv-paper-title a {
-  text-decoration-thickness: 1px;
-  text-decoration-color: var(--line);
-}
-
-.cv-paper-title a:hover,
-.cv-paper-title a:focus-visible {
-  text-decoration-color: var(--ink);
-}
-
-.cv-publications .cv-presentation {
+.cv-publications .publication-links {
   margin-top: 0.35rem;
   font-size: 0.95rem;
 }

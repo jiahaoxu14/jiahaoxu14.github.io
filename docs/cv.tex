@@ -6,12 +6,13 @@
 \usepackage[T1]{fontenc}
 \usepackage{mathpazo}
 \usepackage{microtype}
-\usepackage[margin=0.75in,top=0.55in,bottom=0.55in]{geometry}
+\usepackage[margin=0.75in,top=0.45in,bottom=0.45in]{geometry}
 \usepackage{enumitem}
 \usepackage{tabularx}
 \usepackage{titlesec}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
+\usepackage{pict2e}
 \usepackage[hidelinks]{hyperref}
 
 \definecolor{secondary}{gray}{0.30}
@@ -25,19 +26,46 @@
 \setlength{\parindent}{0pt}
 \setlength{\tabcolsep}{0pt}
 \setlength{\emergencystretch}{1em}
-\setlength{\footskip}{23pt}
+\setlength{\footskip}{17pt}
 \raggedright
 \titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{1pt}{\color{rulegray}\titlerule[0.3pt]}]
-\titlespacing*{\section}{0pt}{7pt}{4pt}
+\titlespacing*{\section}{0pt}{4pt}{3pt}
 \setlist[enumerate]{leftmargin=1.65em,label={[\arabic*]},
-  font=\small\color{secondary},labelsep=0.5em,topsep=2pt,itemsep=3pt,parsep=0pt}
+  font=\small\color{secondary},labelsep=0.5em,topsep=0pt,itemsep=3pt,parsep=0pt}
 
-% Institution, location, degree, dates. Dates share the institution baseline.
+% Institution and location share a heading, with dates aligned right.
 \newcommand{\cventry}[4]{%
   \begin{tabularx}{\linewidth}{@{}Xr@{}}
-    \textbf{#1} & {\small #4} \\
-    #3 & {\small\color{secondary} #2}
+    \textbf{#1} {\small\color{secondary}\enspace\textperiodcentered\enspace #2} & {\small #4} \\
+    #3 & {}
   \end{tabularx}\par
+}
+
+% Presentation-screen icon matching the website's slide links.
+\newcommand{\slideicon}{%
+  \raisebox{-0.15em}{%
+    \setlength{\unitlength}{0.04em}%
+    \begin{picture}(24,24)
+      \linethickness{0.7pt}
+      \put(3,8){\framebox(18,12){}}
+      \put(12,8){\line(-4,-5){4}}
+      \put(12,8){\line(4,-5){4}}
+    \end{picture}%
+  }%
+}
+
+% Document icon matching the website's PDF links.
+\newcommand{\pdficon}{%
+  \raisebox{-0.15em}{%
+    \setlength{\unitlength}{0.04em}%
+    \begin{picture}(24,24)
+      \linethickness{0.7pt}
+      \polyline(6,3)(18,3)(18,17)(14,21)(6,21)(6,3)
+      \polyline(14,21)(14,16)(18,16)
+      \put(9,12){\line(1,0){6}}
+      \put(9,8){\line(1,0){6}}
+    \end{picture}%
+  }%
 }
 
 \begin{document}
@@ -61,12 +89,13 @@ information, and investigate how AI agents can interpret and act within shared
 \section*{Education}
 \cventry{Virginia Tech}{Blacksburg, VA}
   {PhD in Computer Science \& Applications}{Aug. 2023 -- present}
-{\small Advisor: Chris North}\par
+{\small Advisors: \href{https://people.cs.vt.edu/north/}{Chris North} and
+\href{https://rjfaust.github.io/}{Rebecca Faust}}\par
 \vspace{4pt}
 
 \cventry{Tufts University}{Medford, MA}
   {MS in Computer Science}{Jan. 2021 -- May 2023}
-{\small Advisor: Remco Chang}\par
+{\small Advisor: \href{https://www.cs.tufts.edu/~remco/}{Remco Chang}}\par
 \vspace{4pt}
 
 \cventry{Chang'an University}{Xi'an, China}
@@ -74,43 +103,52 @@ information, and investigate how AI agents can interpret and act within shared
 {\small Exchange study, University of California, Irvine \hfill Apr. -- Oct. 2019}
 
 \section*{Publications}
-{\small\bfseries Peer-reviewed publications}\par
+{\small\bfseries Conference Papers\par}
 \begin{enumerate}
-  \item \href{https://arxiv.org/abs/2610.27176}{CanvasObs: Structured Spatial
-    Observation for Agent Editing on 2D Infinite Canvases.}\par
-    {\small \textbf{Jiahao Xu}, Haohui Wang, Rebecca Faust, Dawei Zhou,
-    and Chris North.}\par
-    {\small \textit{VISxGenAI}, 2026. Workshop at IEEE VIS.}\par
-    {\small Presented at VISxGenAI, IEEE VIS 2026. \href{https://jiahaox.com/slides/canvasobs/}{Slides}.}
-
-  \item \href{https://arxiv.org/abs/2607.28853}{Spatial Visual Analytics for
-    Multi-Document Summary Verification.}\par
+  \item Spatial Visual Analytics for
+    Multi-Document Summary Verification.\par
     {\small \textbf{Jiahao Xu}, Wei Liu, Yang Liu, Eric Krokos, Kirsten Whitley,
-    Xuan Wang, Rebecca Faust, and Chris North.}\par
-    {\small \textit{IEEE VIS}, 2026. Full paper.}\par
-    {\small Presented at IEEE VIS 2026. \href{https://jiahaox.com/slides/svs/}{Slides}.}
+    Xuan Wang, Rebecca Faust, and Chris North.\par}
+    {\small \textit{IEEE VIS}, 2026. Full paper; to appear in \textit{IEEE TVCG}.\par}
+    {\small \href{https://arxiv.org/pdf/2607.28853}{\pdficon\hspace{0.35em}PDF} \quad \href{https://jiahaox.com/slides/svs/}{\slideicon\hspace{0.35em}Slides (VIS 2026)}\par}
 
-  \item \href{https://arxiv.org/abs/2606.28517}{Drag, Infer, Reproject: Grounding
-    LLMs through Spatial Interaction for Image Clustering.}\par
-    {\small Yang Liu, Xuxin Tang, \textbf{Jiahao Xu}, and Chris North.}\par
-    {\small \textit{IEEE VIS}, 2026. Short paper.}
-
-  \item \href{https://doi.org/10.1109/TVCG.2025.3626411}{The Effects of Belief
-    Elicitation in Visual Data Analysis: A Longitudinal Classroom Study.}\par
-    {\small Edward W. He, Vanessa Bellotti, Alexandra Scott, \textbf{Jiahao Xu},
-    Ashley Suh, Jen Rogers, and Remco Chang.}\par
-    {\small \textit{IEEE Transactions on Visualization and Computer Graphics},
-    32(2):2379--2393, 2026.}
+  \item Drag, Infer, Reproject: Grounding
+    LLMs through Spatial Interaction for Image Clustering.\par
+    {\small Yang Liu, Xuxin Tang, \textbf{Jiahao Xu}, and Chris North.\par}
+    {\small \textit{IEEE VIS}, 2026. Short paper.\par}
+    {\small \href{https://arxiv.org/pdf/2606.28517}{\pdficon\hspace{0.35em}PDF}\par}
 \end{enumerate}
 
-{\small\bfseries Preprints}\par
+{\small\bfseries Journal Articles\par}
 \begin{enumerate}[resume]
-  \item \href{https://arxiv.org/abs/2610.12345}{Overcoming Prior Barriers:
-    Supervised Fine-Tuning under Long-Tail Distribution.}\par
+  \item The Effects of Belief
+    Elicitation in Visual Data Analysis: A Longitudinal Classroom Study.\par
+    {\small Edward W. He, Vanessa Bellotti, Alexandra Scott, \textbf{Jiahao Xu},
+    Ashley Suh, Jen Rogers, and Remco Chang.\par}
+    {\small \textit{IEEE Transactions on Visualization and Computer Graphics},
+    32(2):2379--2393, 2026.\par}
+    {\small \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=11219244}{\pdficon\hspace{0.35em}PDF}\par}
+\end{enumerate}
+
+{\small\bfseries Workshop Papers\par}
+\begin{enumerate}[resume]
+  \item CanvasObs: Structured Spatial
+    Observation for Agent Editing on 2D Infinite Canvases.\par
+    {\small \textbf{Jiahao Xu}, Haohui Wang, Rebecca Faust, Dawei Zhou,
+    and Chris North.\par}
+    {\small \textit{VISxGenAI}, 2026. Workshop at IEEE VIS.\par}
+    {\small \href{https://arxiv.org/pdf/2610.27176}{\pdficon\hspace{0.35em}PDF} \quad \href{https://jiahaox.com/slides/canvasobs/}{\slideicon\hspace{0.35em}Slides (VIS 2026)}\par}
+\end{enumerate}
+
+{\small\bfseries Preprints\par}
+\begin{enumerate}[resume]
+  \item Overcoming Prior Barriers:
+    Supervised Fine-Tuning under Long-Tail Distribution.\par
     {\small Haohui Wang, \textbf{Jiahao Xu}, Wangzhi Zhan, Tong Zeng, Dongqi Fu,
     Hong Li, Swastik Roy, Naren Ramakrishnan, Chris North, Jian Kang,
-    Yujun Yan, and Dawei Zhou.}\par
-    {\small \textit{arXiv preprint}, 2026.}
+    Yujun Yan, and Dawei Zhou.\par}
+    {\small \textit{arXiv preprint}, 2026.\par}
+    {\small \href{https://arxiv.org/pdf/2610.12345}{\pdficon\hspace{0.35em}PDF}\par}
 \end{enumerate}
 
 \section*{Honors \& Recognition}
