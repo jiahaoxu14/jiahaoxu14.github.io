@@ -1,7 +1,7 @@
 import { o as openBlock, e as createElementBlock, aG as createStaticVNode, b as createBlock, w as withCtx, g as createBaseVNode, d as createVNode, v as normalizeProps, x as guardReactiveProps, U as unref } from "./modules/vue-DCd3fsyH.js";
-import { u as useSlideContext, f as frontmatterToProps } from "./slidev/context-BoeIygqB.js";
-import { _ as _export_sfc } from "./index-tUcMyYlJ.js";
-import { I as InjectedLayout } from "./slidev/none-B8I3P91o.js";
+import { u as useSlideContext, f as frontmatterToProps } from "./slidev/context-BZ9LmUBo.js";
+import { _ as _export_sfc } from "./index-_oBFeUd_.js";
+import { I as InjectedLayout } from "./slidev/none-yf68NJKT.js";
 import "./modules/shiki-BYicmHTF.js";
 const _hoisted_1 = { class: "experiment" };
 const _sfc_main$1 = {

@@ -1,5 +1,5 @@
 import { a9 as injectLocal, z as computed, r as ref, as as toRef, aH as objectOmit } from "../modules/vue-DCd3fsyH.js";
-import { G as injectionClicksContext, H as injectionSlideZoom, y as injectionSlideScale, C as injectionFrontmatter, E as injectionRenderContext, B as injectionRoute, D as injectionCurrentPage, a9 as injectionSlidevContext, aa as HEADMATTER_FIELDS, ab as FRONTMATTER_FIELDS } from "../index-tUcMyYlJ.js";
+import { G as injectionClicksContext, H as injectionSlideZoom, y as injectionSlideScale, C as injectionFrontmatter, E as injectionRenderContext, B as injectionRoute, D as injectionCurrentPage, a9 as injectionSlidevContext, aa as HEADMATTER_FIELDS, ab as FRONTMATTER_FIELDS } from "../index-_oBFeUd_.js";
 function useSlideContext() {
   const $slidev = injectLocal(injectionSlidevContext);
   const $nav = toRef($slidev, "nav");

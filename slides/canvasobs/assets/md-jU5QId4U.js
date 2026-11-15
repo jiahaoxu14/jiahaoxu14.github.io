@@ -1,8 +1,8 @@
 import { aG as createStaticVNode, o as openBlock, b as createBlock, w as withCtx, g as createBaseVNode, d as createVNode, v as normalizeProps, x as guardReactiveProps, U as unref } from "./modules/vue-DCd3fsyH.js";
 import { _ as _imports_0 } from "./canvasobs-teaser-sA79N2s9.js";
-import { u as useSlideContext, f as frontmatterToProps } from "./slidev/context-BoeIygqB.js";
-import { _ as _export_sfc } from "./index-tUcMyYlJ.js";
-import { I as InjectedLayout } from "./slidev/none-B8I3P91o.js";
+import { u as useSlideContext, f as frontmatterToProps } from "./slidev/context-BZ9LmUBo.js";
+import { _ as _export_sfc } from "./index-_oBFeUd_.js";
+import { I as InjectedLayout } from "./slidev/none-yf68NJKT.js";
 import "./modules/shiki-BYicmHTF.js";
 const _imports_1 = "/slides/canvasobs/images/canvasobs-paper-qr.png";
 const _imports_2 = "/slides/canvasobs/images/jiahaox-website-qr.png";

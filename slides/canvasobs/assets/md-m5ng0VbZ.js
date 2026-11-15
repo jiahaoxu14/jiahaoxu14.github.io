@@ -1,7 +1,7 @@
-import { o as openBlock, e as createElementBlock, g as createBaseVNode, an as createTextVNode, t as toDisplayString, F as Fragment, j as createCommentVNode, al as renderList, n as normalizeClass, z as computed, b as createBlock, w as withCtx, d as createVNode, v as normalizeProps, x as guardReactiveProps, U as unref } from "./modules/vue-DCd3fsyH.js";
-import { _ as _export_sfc } from "./index-tUcMyYlJ.js";
-import { u as useSlideContext, f as frontmatterToProps } from "./slidev/context-BoeIygqB.js";
-import { I as InjectedLayout } from "./slidev/none-B8I3P91o.js";
+import { L as watch, M as onMounted, N as onUnmounted, o as openBlock, e as createElementBlock, g as createBaseVNode, an as createTextVNode, t as toDisplayString, F as Fragment, j as createCommentVNode, al as renderList, n as normalizeClass, U as unref, z as computed, r as ref, b as createBlock, w as withCtx, d as createVNode, v as normalizeProps, x as guardReactiveProps } from "./modules/vue-DCd3fsyH.js";
+import { _ as _export_sfc } from "./index-_oBFeUd_.js";
+import { u as useSlideContext, f as frontmatterToProps } from "./slidev/context-BZ9LmUBo.js";
+import { I as InjectedLayout } from "./slidev/none-yf68NJKT.js";
 import "./modules/shiki-BYicmHTF.js";
 const _hoisted_1 = { class: "case-study" };
 const _hoisted_2 = {
@@ -9,9 +9,9 @@ const _hoisted_2 = {
   class: "task-intro"
 };
 const _hoisted_3 = { key: 0 };
-const _hoisted_4 = ["src", "alt"];
+const _hoisted_4 = ["src", "title"];
 const _hoisted_5 = {
-  key: 1,
+  key: 2,
   class: "outcome"
 };
 const _hoisted_6 = {
@@ -25,8 +25,9 @@ const _hoisted_7 = {
 const _sfc_main$1 = {
   __name: "EvaluationCaseStudy",
   setup(__props) {
-    const { $clicks } = useSlideContext();
+    const { $clicks, $nav } = useSlideContext();
     const step = computed(() => Math.min(8, $clicks.value));
+    const frames = ref([]);
     const taskIndex = computed(() => Math.max(0, Math.floor((step.value - 1) / 2)));
     const tasks = [
       ["Retrieve the offscreen takeaway", "Add the current working copy of “Unclear ownership delays handoffs” to Friday’s report.", "Existing editable copy", "Recreated text"],
@@ -36,6 +37,15 @@ const _sfc_main$1 = {
     ];
     const variants = [{ id: "original", label: "Original tldraw agentic kit", outcomeIndex: 3 }, { id: "canvasobs", label: "CanvasObs", outcomeIndex: 2 }];
     const task = computed(() => tasks[taskIndex.value]);
+    function send() {
+      frames.value.forEach((frame) => frame?.contentWindow?.postMessage({ type: "case-study-step", step: step.value }, window.location.origin));
+    }
+    function receive(event) {
+      if (event.origin === window.location.origin && frames.value.some((f) => f?.contentWindow === event.source) && event.data?.type === "case-study-ready") send();
+    }
+    watch(step, send, { flush: "post" });
+    onMounted(() => window.addEventListener("message", receive));
+    onUnmounted(() => window.removeEventListener("message", receive));
     return (_ctx, _cache) => {
       return openBlock(), createElementBlock("section", _hoisted_1, [
         step.value > 0 ? (openBlock(), createElementBlock("div", _hoisted_2, [
@@ -155,11 +165,14 @@ const _sfc_main$1 = {
                       /* TEXT */
                     )) : createCommentVNode("v-if", true),
                     createCommentVNode(" Hidden Slidev neighbors have no text layout; mount tldraw only on the active slide. "),
-                    createBaseVNode("img", {
-                      class: "canvas-view",
-                      src: `/images/canvasobs-slides/${variant.id}-${step.value}.svg`,
-                      alt: `${variant.label}: ${step.value ? task.value[0] : "case-study overview"}`
-                    }, null, 8, _hoisted_4),
+                    unref($nav).currentSlideNo === 5 ? (openBlock(), createElementBlock("iframe", {
+                      key: 1,
+                      ref_for: true,
+                      ref: (el) => frames.value[i] = el,
+                      src: `/slides/canvasobs/demo/?case-study-slide&variant=${variant.id}`,
+                      title: `${variant.label} case-study canvas`,
+                      onLoad: send
+                    }, null, 40, _hoisted_4)) : createCommentVNode("v-if", true),
                     step.value > 0 ? (openBlock(), createElementBlock(
                       "p",
                       _hoisted_5,
@@ -208,7 +221,7 @@ const _sfc_main$1 = {
     };
   }
 };
-const __unplugin_components_0 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-8f382391"]]);
+const __unplugin_components_0 = /* @__PURE__ */ _export_sfc(_sfc_main$1, [["__scopeId", "data-v-e35c1de1"]]);
 const _sfc_main = {
   __name: "slides.md__slidev_5",
   setup(__props) {

@@ -1,7 +1,7 @@
 import { L as watch, o as openBlock, e as createElementBlock, au as withDirectives, av as vShow, g as createBaseVNode, an as createTextVNode, aG as createStaticVNode, j as createCommentVNode, F as Fragment, r as ref, z as computed, b as createBlock, w as withCtx, d as createVNode, v as normalizeProps, x as guardReactiveProps, U as unref } from "./modules/vue-DCd3fsyH.js";
-import { _ as _export_sfc } from "./index-tUcMyYlJ.js";
-import { u as useSlideContext, f as frontmatterToProps } from "./slidev/context-BoeIygqB.js";
-import { I as InjectedLayout } from "./slidev/none-B8I3P91o.js";
+import { _ as _export_sfc } from "./index-_oBFeUd_.js";
+import { u as useSlideContext, f as frontmatterToProps } from "./slidev/context-BZ9LmUBo.js";
+import { I as InjectedLayout } from "./slidev/none-yf68NJKT.js";
 import "./modules/shiki-BYicmHTF.js";
 const _imports_0 = "/slides/canvasobs/videos/grouping-notes-poster.png";
 const _imports_1 = "/slides/canvasobs/videos/grouping-notes.mp4?v=14";

@@ -1,5 +1,5 @@
 import { f as defineComponent, T as useRouter, e as createElementBlock, g as createBaseVNode, an as createTextVNode, t as toDisplayString, U as unref, b as createBlock, j as createCommentVNode, w as withCtx, z as computed, a as resolveComponent, o as openBlock } from "../modules/vue-DCd3fsyH.js";
-import { u as useNav, _ as _export_sfc } from "../index-tUcMyYlJ.js";
+import { u as useNav, _ as _export_sfc } from "../index-_oBFeUd_.js";
 import "../modules/shiki-BYicmHTF.js";
 const _hoisted_1 = { class: "grid justify-center text-center pt-15% gap-5" };
 const _hoisted_2 = { class: "text-2xl" };

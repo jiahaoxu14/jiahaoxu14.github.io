@@ -1,4 +1,4 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/md-XCH24tS_.js","assets/modules/vue-DCd3fsyH.js","assets/canvasobs-teaser-sA79N2s9.js","assets/slidev/none-B8I3P91o.js","assets/slidev/context-BoeIygqB.js","assets/modules/shiki-BYicmHTF.js","assets/modules/shiki-BFcF5iNl.css","assets/md-DUZqH8Ch.js","assets/md-ByukD-4l.css","assets/md-NwU7Dyly.js","assets/md-BIAwFZIC.css","assets/md-DAPFWvCa.js","assets/md-BOIAJS3J.css","assets/md-DtLyC87n.js","assets/md-DOEcqIJg.css","assets/md-DOwCgj3d.js","assets/md-EX6Dc-Wy.css","assets/md-Wbua4pqz.js","assets/md-Bw0lnKwW.css","assets/md-CQZ24xCq.js","assets/md-B5L_2vrB.css","assets/md-B5YF6AJ9.js","assets/md-pRnwMSwM.css","assets/slidev/play-CjAlcRyu.js","assets/modules/unplugin-icons-CDWZ4-sC.js","assets/play-BmdNipyv.css","assets/slidev/404-D5DfiAXZ.js","assets/404-CnFFVeEy.css"])))=>i.map(i=>d[i]);
+const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/md-Hi-avCBK.js","assets/modules/vue-DCd3fsyH.js","assets/canvasobs-teaser-sA79N2s9.js","assets/slidev/none-yf68NJKT.js","assets/slidev/context-BZ9LmUBo.js","assets/modules/shiki-BYicmHTF.js","assets/modules/shiki-BFcF5iNl.css","assets/md-BA6Z-Ddx.js","assets/md-ByukD-4l.css","assets/md-Cgqkx5zP.js","assets/md-B2_HjCg_.css","assets/md-C6rM5V0p.js","assets/md-BOIAJS3J.css","assets/md-m5ng0VbZ.js","assets/md-CY6skQ6a.css","assets/md-Dbw1DnUb.js","assets/md-EX6Dc-Wy.css","assets/md-CUGiR66l.js","assets/md-Bw0lnKwW.css","assets/md-wuhaOHo4.js","assets/md-B5L_2vrB.css","assets/md-jU5QId4U.js","assets/md-pRnwMSwM.css","assets/slidev/play-DjywjcuW.js","assets/modules/unplugin-icons-CDWZ4-sC.js","assets/play-BmdNipyv.css","assets/slidev/404-BvE_raA1.js","assets/404-CnFFVeEy.css"])))=>i.map(i=>d[i]);
 import { z as computed, A as isRef, B as toValue, C as hasInjectionContext, D as inject, E as watchEffect, G as onBeforeUnmount, H as onDeactivated, I as onActivated, J as getCurrentScope, r as ref, K as getCurrentInstance, L as watch, M as onMounted, N as onUnmounted, O as shallowReactive, P as isReadonly, o as openBlock, e as createElementBlock, t as toDisplayString, f as defineComponent, F as Fragment, g as createBaseVNode, j as createCommentVNode, Q as reactive, R as shallowRef, S as defineAsyncComponent, T as useRouter, p as nextTick, U as unref, V as useMagicKeys, W as useFullscreen, X as useLocalStorage, Y as useBreakpoints, Z as useToggle, _ as useActiveElement, $ as breakpointsTailwind, a0 as isClient, a1 as useWindowSize, a2 as createSharedComposable, a3 as useRoute, a4 as usePreferredDark, a5 as useStyleTag, a6 as toRaw, b as createBlock, a as resolveComponent, a7 as useElementBounding, a8 as onClickOutside, a9 as injectLocal, aa as useWindowFocus, ab as directive, ac as createRouter, ad as createWebHashHistory, c as createApp } from "./modules/vue-DCd3fsyH.js";
 import { T as TwoslashFloatingVue } from "./modules/shiki-BYicmHTF.js";
 (function polyfill() {
@@ -1384,7 +1384,7 @@ const getAsyncComponent = (idx, loader) => defineAsyncComponent({
 });
 const load1 = async () => {
   try {
-    return componentsCache[0] ??= await __vitePreload(() => import("./md-XCH24tS_.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0);
+    return componentsCache[0] ??= await __vitePreload(() => import("./md-Hi-avCBK.js"), true ? __vite__mapDeps([0,1,2,3,4,5,6]) : void 0);
   } catch (e) {
     console.error("slide failed to load", e);
     return SlideError;
@@ -1392,7 +1392,7 @@ const load1 = async () => {
 };
 const load2 = async () => {
   try {
-    return componentsCache[1] ??= await __vitePreload(() => import("./md-DUZqH8Ch.js"), true ? __vite__mapDeps([7,1,4,3,5,6,8]) : void 0);
+    return componentsCache[1] ??= await __vitePreload(() => import("./md-BA6Z-Ddx.js"), true ? __vite__mapDeps([7,1,4,3,5,6,8]) : void 0);
   } catch (e) {
     console.error("slide failed to load", e);
     return SlideError;
@@ -1400,7 +1400,7 @@ const load2 = async () => {
 };
 const load3 = async () => {
   try {
-    return componentsCache[2] ??= await __vitePreload(() => import("./md-NwU7Dyly.js"), true ? __vite__mapDeps([9,1,4,3,5,6,10]) : void 0);
+    return componentsCache[2] ??= await __vitePreload(() => import("./md-Cgqkx5zP.js"), true ? __vite__mapDeps([9,1,4,3,5,6,10]) : void 0);
   } catch (e) {
     console.error("slide failed to load", e);
     return SlideError;
@@ -1408,7 +1408,7 @@ const load3 = async () => {
 };
 const load4 = async () => {
   try {
-    return componentsCache[3] ??= await __vitePreload(() => import("./md-DAPFWvCa.js"), true ? __vite__mapDeps([11,1,4,3,5,6,12]) : void 0);
+    return componentsCache[3] ??= await __vitePreload(() => import("./md-C6rM5V0p.js"), true ? __vite__mapDeps([11,1,4,3,5,6,12]) : void 0);
   } catch (e) {
     console.error("slide failed to load", e);
     return SlideError;
@@ -1416,7 +1416,7 @@ const load4 = async () => {
 };
 const load5 = async () => {
   try {
-    return componentsCache[4] ??= await __vitePreload(() => import("./md-DtLyC87n.js"), true ? __vite__mapDeps([13,1,4,3,5,6,14]) : void 0);
+    return componentsCache[4] ??= await __vitePreload(() => import("./md-m5ng0VbZ.js"), true ? __vite__mapDeps([13,1,4,3,5,6,14]) : void 0);
   } catch (e) {
     console.error("slide failed to load", e);
     return SlideError;
@@ -1424,7 +1424,7 @@ const load5 = async () => {
 };
 const load6 = async () => {
   try {
-    return componentsCache[5] ??= await __vitePreload(() => import("./md-DOwCgj3d.js"), true ? __vite__mapDeps([15,1,4,3,5,6,16]) : void 0);
+    return componentsCache[5] ??= await __vitePreload(() => import("./md-Dbw1DnUb.js"), true ? __vite__mapDeps([15,1,4,3,5,6,16]) : void 0);
   } catch (e) {
     console.error("slide failed to load", e);
     return SlideError;
@@ -1432,7 +1432,7 @@ const load6 = async () => {
 };
 const load7 = async () => {
   try {
-    return componentsCache[6] ??= await __vitePreload(() => import("./md-Wbua4pqz.js"), true ? __vite__mapDeps([17,1,4,3,5,6,18]) : void 0);
+    return componentsCache[6] ??= await __vitePreload(() => import("./md-CUGiR66l.js"), true ? __vite__mapDeps([17,1,4,3,5,6,18]) : void 0);
   } catch (e) {
     console.error("slide failed to load", e);
     return SlideError;
@@ -1440,7 +1440,7 @@ const load7 = async () => {
 };
 const load8 = async () => {
   try {
-    return componentsCache[7] ??= await __vitePreload(() => import("./md-CQZ24xCq.js"), true ? __vite__mapDeps([19,1,4,3,5,6,20]) : void 0);
+    return componentsCache[7] ??= await __vitePreload(() => import("./md-wuhaOHo4.js"), true ? __vite__mapDeps([19,1,4,3,5,6,20]) : void 0);
   } catch (e) {
     console.error("slide failed to load", e);
     return SlideError;
@@ -1448,7 +1448,7 @@ const load8 = async () => {
 };
 const load9 = async () => {
   try {
-    return componentsCache[8] ??= await __vitePreload(() => import("./md-B5YF6AJ9.js"), true ? __vite__mapDeps([21,1,2,4,3,5,6,22]) : void 0);
+    return componentsCache[8] ??= await __vitePreload(() => import("./md-jU5QId4U.js"), true ? __vite__mapDeps([21,1,2,4,3,5,6,22]) : void 0);
   } catch (e) {
     console.error("slide failed to load", e);
     return SlideError;
@@ -7129,7 +7129,7 @@ function setupRoutes() {
     {
       name: "play",
       path: "/:no",
-      component: () => __vitePreload(() => import("./slidev/play-CjAlcRyu.js").then((n) => n.p), true ? __vite__mapDeps([23,1,4,24,5,6,25]) : void 0)
+      component: () => __vitePreload(() => import("./slidev/play-DjywjcuW.js").then((n) => n.p), true ? __vite__mapDeps([23,1,4,24,5,6,25]) : void 0)
     },
     {
       path: "",
@@ -7138,7 +7138,7 @@ function setupRoutes() {
     {
       path: "/:pathMatch(.*)*",
       name: "NotFound",
-      component: () => __vitePreload(() => import("./slidev/404-D5DfiAXZ.js"), true ? __vite__mapDeps([26,1,5,6,27]) : void 0)
+      component: () => __vitePreload(() => import("./slidev/404-BvE_raA1.js"), true ? __vite__mapDeps([26,1,5,6,27]) : void 0)
     }
   );
   return setups.reduce((routes2, setup) => setup(routes2), routes);

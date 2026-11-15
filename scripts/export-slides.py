@@ -14,6 +14,12 @@ from pathlib import Path
 SITE = Path(__file__).resolve().parents[1]
 
 
+def write_export(path, content):
+    lines = [re.sub(r"^[ \t]+", lambda match: match[0].expandtabs(2), line.rstrip())
+             for line in content.splitlines()]
+    path.write_text("\n".join(lines).rstrip() + "\n")
+
+
 def run(command, directory):
     result = subprocess.run(command, cwd=directory, capture_output=True, text=True)
     if result.returncode:
@@ -39,8 +45,6 @@ def use_saved_canvases(target):
             replacement = '<img class="canvas-view" :src="`/images/canvasobs-slides/observation-${step}.svg`" :alt="`${current.title}: ${revealed ? current.after : current.before}`" />'
         else:
             replacement = '<img class="canvas-view" :src="`/images/canvasobs-slides/${variant.id}-${step}.svg`" :alt="`${variant.label}: ${step ? task[0] : \'case-study overview\'}`" />'
-            content = content.replace('</h2>', '<span class="replay-note">Illustrative replay</span></h2>', 1)
-            content = content.replace('</style>', '.replay-note { float: right; margin-left: 24px; font: 400 16px/1.8 sans-serif; color: #59665f; }\n</style>')
         content, count = re.subn(r"<iframe\b.*?/>", lambda _: replacement, content, flags=re.S)
         if count != 1:
             raise ValueError(f"Expected one canvas embed in {name}, found {count}")
@@ -71,6 +75,12 @@ def export_deck(source, slug, staging, interactive=False):
         (target / "components/CaseStudyDemo.vue").unlink()
         (target / "components/LivePrototypeDemo.vue").unlink()
     slides.write_text(content)
+    if slug == "canvasobs":
+        case_study = target / "components/EvaluationCaseStudy.vue"
+        content = case_study.read_text()
+        content = content.replace('</h2>', '<span class="replay-note">Illustrative replay</span></h2>', 1)
+        content = content.replace('</style>', '.replay-note { float: right; margin-left: 24px; font: 400 16px/1.8 sans-serif; color: #59665f; }\n</style>')
+        case_study.write_text(content)
     if slug == "canvasobs" and not interactive:
         use_saved_canvases(target)
     for path in target.rglob("*"):
@@ -94,7 +104,7 @@ def export_deck(source, slug, staging, interactive=False):
                              rf"\1{base}\2", path.read_text())
             content = content.replace('href="https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png"',
                                       'href="/images/icon.png"')
-            path.write_text("\n".join(line.rstrip() for line in content.splitlines()) + "\n")
+            write_export(path, content)
     print(f"Exported {slug}: {output}", flush=True)
 
 
@@ -133,12 +143,16 @@ def export_canvas_demo(project, staging, license_key=None, capture=False):
     )
     run(["node", str(target / "node_modules/vite/bin/vite.js"), "build", "--outDir",
          str(SITE / "slides/canvasobs/demo")], target)
+    for path in (SITE / "slides/canvasobs/demo").rglob("*"):
+        if path.suffix in {".js", ".css", ".html"}:
+            write_export(path, path.read_text())
     print("Exported isolated CanvasObs examples (no backend or model calls).", flush=True)
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--projects-root", type=Path, default=SITE.parent)
+    parser.add_argument("--deck", choices=("svs", "canvasobs"), help="Export only one presentation.")
     parser.add_argument("--prepare-canvas-capture", action="store_true",
                         help="Build local-only canvases to refresh exported demo views. Do not publish this build.")
     parser.add_argument("--interactive", action="store_true",
@@ -150,7 +164,7 @@ def main():
     if args.interactive and not license_key:
         parser.error("--interactive requires a valid TLDRAW_LICENSE_KEY for jiahaox.com.")
     interactive = args.interactive or args.prepare_canvas_capture
-    if not interactive:
+    if not interactive and args.deck != "svs":
         for name, count in (("observation", 6), ("original", 9), ("canvasobs", 9)):
             for step in range(count):
                 if not (SITE / f"images/canvasobs-slides/{name}-{step}.svg").is_file():
@@ -159,8 +173,10 @@ def main():
         "svs": args.projects_root / "STT_Attributor/paper/vis2026",
         "canvasobs": args.projects_root / "CanvasAct/slides",
     }
+    if args.deck:
+        sources = {args.deck: sources[args.deck]}
     dependencies = list(sources.values())
-    if interactive:
+    if interactive and "canvasobs" in sources:
         dependencies.append(args.projects_root / "CanvasAct/frontend")
     for source in dependencies:
         if not (source / "node_modules").is_dir():
@@ -169,9 +185,9 @@ def main():
         staging = Path(temporary)
         for slug, source in sources.items():
             export_deck(source, slug, staging, interactive)
-        if interactive:
+        if interactive and "canvasobs" in sources:
             export_canvas_demo(args.projects_root / "CanvasAct", staging, license_key, args.prepare_canvas_capture)
-        else:
+        elif "canvasobs" in sources:
             assert not (SITE / "slides/canvasobs/demo").exists(), "Public export must not include local-only canvases."
 
 
