@@ -1,0 +1,41 @@
+
+.existing-tools[data-v-2f755159] { height: 100%; box-sizing: border-box; padding: 38px 64px 40px; display: flex; flex-direction: column; gap: 18px; background: #faf9f6; color: #25312f; font-family: 'DC Sans', sans-serif;
+}
+h1[data-v-2f755159] { margin: 0; font: 500 47px/1.1 'DC Serif', serif; letter-spacing: -.025em;
+}
+.tool-comparison[data-v-2f755159] { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; margin-top: 8px;
+}
+figure[data-v-2f755159] { min-width: 0; margin: 0;
+}
+figcaption[data-v-2f755159] { margin-bottom: 12px; font-size: 26px; line-height: 1.2; font-weight: 600;
+}
+.source-label[data-v-2f755159] { margin: 0 0 8px; color: var(--svs-muted); font-size: 20px; line-height: 1.3;
+}
+figure:first-child .source-label[data-v-2f755159] { text-align: right;
+}
+.interface-crop[data-v-2f755159] { display: block; width: 100%; border: 1px solid #d5dcd5; border-radius: 4px; background: white;
+}
+.source-outline[data-v-2f755159] { fill: none; stroke: var(--svs-muted); stroke-width: 7; stroke-linecap: round; stroke-linejoin: round;
+}
+.citation-outline[data-v-2f755159] { fill: none; stroke: var(--svs-relevance); stroke-width: 6;
+}
+.citation-detail[data-v-2f755159] { margin-top: 18px;
+}
+.citation-detail p[data-v-2f755159] { display: flex; align-items: baseline; justify-content: space-between; margin: 0 0 8px; color: var(--svs-relevance); font-size: 20px; line-height: 1.3;
+}
+.citation-detail svg[data-v-2f755159] { display: block; width: 100%; height: 72px; background: #fff; border: 1px solid #d5dcd5; border-radius: 4px;
+}
+.detail-outline[data-v-2f755159] { stroke-width: 1.5;
+}
+.problem-takeaway[data-v-2f755159] { margin: auto 0 0; font-size: 23px; font-weight: 500; line-height: 1.3; text-wrap: balance;
+}
+.problem-takeaway strong[data-v-2f755159] { color: var(--svs-ink); font-weight: 600;
+}
+.reveal[data-v-2f755159] { opacity: 0; visibility: hidden; transition: opacity 280ms ease, visibility 280ms;
+}
+.reveal.visible[data-v-2f755159] { opacity: 1; visibility: visible;
+}
+@media (prefers-reduced-motion: reduce), print {
+.existing-tools[data-v-2f755159] * { transition: none !important;
+}
+}

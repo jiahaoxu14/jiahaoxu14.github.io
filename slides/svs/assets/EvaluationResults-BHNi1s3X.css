@@ -1,0 +1,39 @@
+
+.evaluation-results[data-v-d1ded4be] { height: 100%; box-sizing: border-box; padding: 30px 64px 36px; background: #faf9f6; color: #25312f; font-family: 'DC Sans', sans-serif; display: flex; flex-direction: column; gap: 18px;
+}
+.question[data-v-d1ded4be] { display: flex; align-items: baseline; gap: 14px; margin: 12px 0 0; font-size: 21px; line-height: 1.3; color: #59665f;
+}
+.question strong[data-v-d1ded4be] { flex-shrink: 0; color: var(--svs-ink); font-weight: 600;
+}
+h1[data-v-d1ded4be] { margin: 0; font: 500 44px/1.12 'DC Serif', serif; letter-spacing: -0.025em;
+}
+i[data-v-d1ded4be] { display: inline-block; width: 23px; height: 13px; flex-shrink: 0; margin-right: 9px;
+}
+.legend[data-v-d1ded4be] { display: flex; justify-content: center; gap: 44px; padding-top: 10px; font-size: 23px;
+}
+.legend span[data-v-d1ded4be] { display: flex; align-items: center;
+}
+.plots[data-v-d1ded4be] { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+}
+figure[data-v-d1ded4be] { min-height: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;
+}
+svg[data-v-d1ded4be] { width: 100%; flex: 1; min-height: 0; background: white;
+}
+figcaption[data-v-d1ded4be] { text-align: center; font-size: 24px; line-height: 1.25; color: var(--svs-ink); font-weight: 600;
+}
+.figure-note[data-v-d1ded4be] { margin: 0; font-size: 20px; line-height: 1.5; text-align: center; color: #59665f; font-weight: 400;
+}
+footer[data-v-d1ded4be] { flex-shrink: 0; margin-top: auto; border-top: 1px solid #d5dcd5; padding-top: 14px;
+}
+footer p[data-v-d1ded4be] { margin: 0; font-size: 25px; line-height: 1.3; font-weight: 600;
+}
+.evaluation-results[data-question="2"][data-v-d1ded4be] { gap: 12px;
+}
+.task-chart[data-v-d1ded4be] { flex: 1; min-height: 0;
+}
+.task-chart img[data-v-d1ded4be] { width: 100%; flex: 1; min-height: 0; object-fit: contain;
+}
+.experience[data-v-d1ded4be] { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 12px;
+}
+.workload-plots[data-v-d1ded4be] { flex: 1; min-height: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+}

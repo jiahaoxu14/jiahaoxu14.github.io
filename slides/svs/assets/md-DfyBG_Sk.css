@@ -1,0 +1,69 @@
+
+.source-pipeline[data-v-e3115638] { width: 100%; height: 100%; box-sizing: border-box; padding: 38px 64px 40px; background: #faf9f6; color: var(--svs-ink); font-family: 'DC Sans', sans-serif; display: flex; flex-direction: column; gap: 24px;
+}
+h1[data-v-e3115638] { width: fit-content; margin: 0; font: 500 47px/1.1 'DC Serif', serif; letter-spacing: -0.025em;
+}
+figure[data-v-e3115638] { flex: 1; min-height: 0; margin: 0;
+}
+svg[data-v-e3115638] { display: block; font-family: inherit; overflow: visible;
+}
+figure > svg[data-v-e3115638] { width: 100%; height: 100%;
+}
+.pipeline-stage[data-v-e3115638] { opacity: 0; visibility: hidden; transition: opacity 240ms ease, visibility 240ms;
+}
+.pipeline-stage.revealed[data-v-e3115638] { opacity: 1; visibility: visible;
+}
+.input-title[data-v-e3115638], .stage-title[data-v-e3115638], .output-title[data-v-e3115638] { fill: var(--svs-ink); text-anchor: middle;
+}
+.input-title[data-v-e3115638] { font-size: 22px; font-weight: 600; text-anchor: start;
+}
+.stage-title[data-v-e3115638] { font-size: 21px; font-weight: 500;
+}
+.output-title[data-v-e3115638] { font-size: 24px; font-weight: 600;
+}
+.detail[data-v-e3115638], .map-legend[data-v-e3115638] { fill: var(--svs-muted); font-size: 18px;
+}
+.detail[data-v-e3115638] { text-anchor: middle;
+}
+.dependency-label[data-v-e3115638] { fill: var(--svs-muted); font-size: 17px; text-anchor: middle;
+}
+.document[data-v-e3115638] { fill: #fff; stroke: #aab8b1; stroke-width: 1.2;
+}
+.document-id[data-v-e3115638] { fill: var(--svs-ink); font-size: 18px; font-weight: 500;
+}
+.small-id[data-v-e3115638] { fill: var(--svs-ink); font-size: 18px;
+}
+.vector-bracket[data-v-e3115638] { fill: none; stroke: var(--svs-relevance); stroke-width: 1.4;
+}
+.vector-value[data-v-e3115638] { fill: var(--svs-relevance); font-size: 18px; font-variant-numeric: tabular-nums; text-anchor: middle;
+}
+.matrix-id[data-v-e3115638] { fill: var(--svs-ink); font-size: 17px;
+}
+.document-lines[data-v-e3115638], .sentence-lines[data-v-e3115638] { fill: none; stroke: #b6c2bc; stroke-width: 1.2; stroke-linecap: round;
+}
+.projection-point[data-v-e3115638] { fill: var(--svs-relevance); stroke: #faf9f6; stroke-width: 1.2;
+}
+.sentence-anchor[data-v-e3115638] { fill: #f97316; stroke: #faf9f6; stroke-width: 2;
+}
+.anchor-id[data-v-e3115638] { fill: #9a3f00; font-size: 20px; font-weight: 600; paint-order: stroke; stroke: #faf9f6; stroke-width: 3; stroke-linejoin: round;
+}
+.map-surface[data-v-e3115638] { fill: #f3f5f2; stroke: #dde3dc; stroke-width: 1;
+}
+.route[data-v-e3115638], .arrow-tip[data-v-e3115638] { fill: none; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round;
+}
+.document-route[data-v-e3115638] { stroke: #5279b1;
+}
+.summary-route[data-v-e3115638] { stroke: #bd6a2f;
+}
+.neutral-route[data-v-e3115638] { stroke: #8e9e95;
+}
+.source-input[data-v-e3115638] { fill: none; stroke: #9aa89f; stroke-width: 1.2; stroke-dasharray: 3 4; stroke-linecap: round;
+}
+.contribution-line[data-v-e3115638] { fill: none; stroke: #aab8b1;
+}
+.merge-point[data-v-e3115638] { fill: #8e9e95;
+}
+@media (prefers-reduced-motion: reduce), print {
+.pipeline-stage[data-v-e3115638] { transition: none;
+}
+}

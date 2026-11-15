@@ -1,0 +1,37 @@
+
+.organization-intro figure[data-v-b1122648] { display: flex; align-items: center;
+}
+.organization-intro svg[data-v-b1122648] { display: block; width: 100%; max-height: 520px; overflow: visible;
+}
+.view-label[data-v-b1122648] { fill: var(--svs-ink); font-size: 27px; font-weight: 500;
+}
+.view-note[data-v-b1122648] { fill: var(--svs-muted); font-size: 18px;
+}
+.canvas-label[data-v-b1122648] { fill: var(--svs-relevance);
+}
+.list-frame[data-v-b1122648] { fill: #fafbf9; stroke: #c9d1cc; stroke-width: 1.5;
+}
+.document[data-v-b1122648] { fill: white; stroke: #b9c4bb; stroke-width: 1.5;
+}
+.document-icon[data-v-b1122648] { fill: none; stroke: var(--svs-muted); stroke-width: 1.2;
+}
+.source-label[data-v-b1122648] { fill: var(--svs-ink); font-size: 21px;
+}
+.text-lines[data-v-b1122648] { fill: none; stroke: #cbd3ce; stroke-width: 3;
+}
+.scroll-track[data-v-b1122648] { stroke: #e0e5df; stroke-width: 5; stroke-linecap: round;
+}
+.scroll-thumb[data-v-b1122648] { stroke: #a6b2a9; stroke-width: 5; stroke-linecap: round;
+}
+.canvas-frame[data-v-b1122648] { fill: #f7f9fd; stroke: #9bb8df; stroke-width: 1.5;
+}
+.canvas-document .document[data-v-b1122648] { stroke: var(--svs-relevance);
+}
+.canvas-document .source-label[data-v-b1122648] { font-size: 18px;
+}
+.canvas-arrow[data-v-b1122648] { fill: none; stroke: var(--svs-relevance); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.canvas-stage[data-v-b1122648] { opacity: 0; visibility: hidden; transition: opacity 320ms ease, visibility 320ms;
+}
+.canvas-stage.revealed[data-v-b1122648] { opacity: 1; visibility: visible;
+}

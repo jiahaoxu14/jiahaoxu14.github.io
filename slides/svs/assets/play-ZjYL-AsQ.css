@@ -1,0 +1,99 @@
+
+.autocomplete-list[data-v-e54c9d11] {
+  ;margin-top:0.25rem;--un-bg-opacity:1;background-color:rgb(255 255 255 / var(--un-bg-opacity));
+  overflow: auto;
+  max-height: calc(100vh - 100px);
+}.dark .autocomplete-list[data-v-e54c9d11]{--un-bg-opacity:1;background-color:rgb(18 18 18 / var(--un-bg-opacity));}
+.autocomplete[data-v-e54c9d11] {
+  cursor: pointer;
+}
+
+.slidev-info-dialog {
+  max-width:37.5rem;padding:1rem !important;
+}
+
+.slidev-slide-container[data-v-c62de360] {
+  position:relative;width:100%;height:100%;overflow:hidden;
+}
+.slidev-slide-content[data-v-c62de360] {
+  --slidev-slide-container-scale: var(--slidev-slide-scale);
+  transform: translate(-50%, -50%) scale(var(--slidev-slide-scale));
+  position:absolute;left:50%;top:50%;overflow:hidden;--un-bg-opacity:1;background-color:rgb(255 255 255 / var(--un-bg-opacity));
+}.dark .slidev-slide-content[data-v-c62de360]{--un-bg-opacity:1;background-color:rgb(18 18 18 / var(--un-bg-opacity));}
+
+.vis2026-footer[data-v-7d81e9e0] {
+  position: absolute;
+  left: 56px;
+  right: 0;
+  bottom: 0;
+  height: 24px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px 0 20px;
+  background: var(--vis2026-peach);
+  color: var(--vis2026-brown);
+  clip-path: polygon(12px 0, 100% 0, 100% 100%, 0 100%, 0 12px);
+  pointer-events: none;
+}
+.deck-page[data-v-7d81e9e0] {
+  font: 400 16px/20px 'DC Sans', sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+.vis2026-footer img[data-v-7d81e9e0] {
+  display: block;
+  width: auto;
+  height: 19px;
+  object-fit: contain;
+}
+
+.disable-view-transition[data-v-0c83b46e] * {
+  view-transition-name: none !important;
+}
+.slidev-page[data-v-0c83b46e] {
+  position: absolute;
+  inset: 0;
+
+  /* Zoom handling */
+  --slidev-slide-zoom-scale: 1;
+  width: calc(100% / var(--slidev-slide-zoom-scale));
+  height: calc(100% / var(--slidev-slide-zoom-scale));
+  transform-origin: top left;
+  scale: var(--slidev-slide-zoom-scale);
+  /* slide scale = container scale * zoom scale */
+  --slidev-slide-scale: calc(var(--slidev-slide-container-scale) * var(--slidev-slide-zoom-scale));
+}
+
+.slider {
+  appearance: none;
+  height: 22px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  overflow:hidden;border-width:1px;border-color:rgb(156 163 175 / 0.2);border-radius:0.25rem;background-color:rgb(156 163 175 / 0.05);
+}
+.slider:hover {
+  opacity: 1;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 5px;
+  height: 22px;
+  background: var(--slidev-theme-primary);
+  cursor: pointer;
+  z-index: 10;
+}
+.slider::-moz-range-thumb {
+  width: 5px;
+  height: 22px;
+  background: var(--slidev-theme-primary);
+  cursor: pointer;
+  z-index: 10;
+}
+
+#slideshow[data-v-833aabb9] {
+  height: 100%;
+}

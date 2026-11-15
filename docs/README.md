@@ -1,11 +1,15 @@
 # Editing the CV
 
 `cv.tex` is the editable, standalone LaTeX source for the academic CV, updated in
-October 2026. It contains research interests, education, publications, and
-teaching. The original resume supplied the degree dates and teaching history.
+November 2026. It contains research interests, education, publications,
+honors and recognition, and teaching. The original resume supplied the degree
+dates and teaching history.
 Research Experience and Technical Skills were removed at the author's request.
 The author confirmed serving as a TA for Chris North's CS 5764: Information
 Visualization. Dates are omitted from all TA entries at the author's request.
+The author confirmed presenting SVS and CanvasObs at IEEE VIS 2026 and requested
+the IEEE VIS 2026 Doctoral Colloquium entry under Honors & Recognition.
+Presentation notes and slide links stay with their publication entries.
 
 ## Content sources
 
@@ -33,6 +37,7 @@ that historical appointment needs clarification if research experience is
 restored. No candidacy milestone, graduation
 date, new teaching appointment, service, award, grant award, or completed talk
 has been inferred from a draft, proposal, presentation deck, or folder name.
+The presentation notes above are based on the author's confirmation.
 
 ## Layout and publication style
 
@@ -96,3 +101,13 @@ This rebuilds the CV and copies it to `docs/Resume_Jiahao.pdf`, preserving the
 website's existing download link. The command updates the local file only; it
 does not commit, push, or deploy anything. Commit the source and published PDF
 together when the content is ready.
+
+The readable HTML CV lives in `../cv/index.html` and is served at `/cv/`.
+The homepage's CV icon and navigation link open this page; its PDF download
+keeps the original `/docs/Resume_Jiahao.pdf` address. Update the HTML and LaTeX
+versions together when changing content. They deliberately share no build
+dependency, so the personal website remains a static HTML/CSS site.
+
+The PDF uses two teaching columns to retain its one-page layout. The HTML
+version uses the website's existing fonts and colors and stacks dates and
+roles on narrow screens.

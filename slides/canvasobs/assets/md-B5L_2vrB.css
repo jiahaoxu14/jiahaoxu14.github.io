@@ -1,0 +1,13 @@
+
+.message[data-v-bf5257a0] { margin: 38px 0 34px; font-size: 38px; line-height: 1.25; color: #693a19;
+}
+.points[data-v-bf5257a0] { border-top: 3px solid #df6824; padding-top: 30px; display: grid; gap: 30px;
+}
+.points > div[data-v-bf5257a0] { display: flex; align-items: baseline; gap: 28px;
+}
+.points span[data-v-bf5257a0] { font-size: 21px; color: #a66c43;
+}
+h2[data-v-bf5257a0] { margin: 0 0 9px; font-size: 28px; font-weight: 500; line-height: 1.3; color: #693a19;
+}
+.points p[data-v-bf5257a0] { display: none;
+}

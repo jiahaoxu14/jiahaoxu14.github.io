@@ -1,0 +1,15 @@
+
+.agent-context[data-v-6bfb5baa] { margin-top: 30px;
+}
+h2[data-v-6bfb5baa] { margin: 0 0 30px; color: #693a19; font-size: 29px; font-weight: 500;
+}
+.context-layout[data-v-6bfb5baa] { display: grid; grid-template-columns: 590px 1fr; gap: 40px; align-items: center; min-height: 460px;
+}
+.context-example img[data-v-6bfb5baa] { display: block; width: 100%; height: auto; border: 1px solid #e2e5e7;
+}
+dl[data-v-6bfb5baa] { margin: 0; display: grid; gap: 27px;
+}
+dt[data-v-6bfb5baa] { font-size: 26px; font-weight: 600; color: #693a19; margin-bottom: 8px;
+}
+dd[data-v-6bfb5baa] { margin: 0; font-size: 23px; line-height: 1.35; color: #59665f;
+}

@@ -1,0 +1,69 @@
+
+.verification-gap[data-v-993471e7] { padding-top: 38px; gap: 24px;
+}
+.reveal[data-v-993471e7] { opacity: 0; visibility: hidden; transition: opacity 260ms ease, visibility 260ms;
+}
+.reveal.revealed[data-v-993471e7] { opacity: 1; visibility: visible;
+}
+.gap-challenges[data-v-993471e7] { display: grid; grid-template-columns: 1fr 1fr; align-items: start; padding-top: 28px;
+}
+.gap-challenges > section[data-v-993471e7] { min-width: 0;
+}
+.gap-relevance[data-v-993471e7] { padding-right: 32px;
+}
+.gap-consistency[data-v-993471e7] { padding-left: 32px; border-left: 1px solid #d5dcd5;
+}
+.gap-challenges h2[data-v-993471e7] { font-size: 28px; margin: 0 0 16px;
+}
+.gap-relevance h2[data-v-993471e7] { color: var(--svs-relevance);
+}
+.gap-consistency h2[data-v-993471e7] { color: var(--svs-consistency);
+}
+.gap-challenges svg[data-v-993471e7] { display: block; width: 100%; height: auto; overflow: visible;
+}
+.diagram-label[data-v-993471e7] { font-size: 22px; fill: var(--svs-muted);
+}
+.document[data-v-993471e7] { fill: white; stroke: #c9d1cc; stroke-width: 1.5; transition: fill 260ms ease, stroke 260ms ease;
+}
+.document.relevant[data-v-993471e7] { fill: var(--svs-relevance-bg); stroke: var(--svs-relevance);
+}
+.document.uncovered[data-v-993471e7] { fill: var(--svs-coverage-bg); stroke: var(--svs-coverage); stroke-dasharray: 5 4;
+}
+.doc-id[data-v-993471e7] { font-size: 20px; fill: var(--svs-ink);
+}
+.text-lines[data-v-993471e7] { fill: none; stroke: #cbd3ce; stroke-width: 3;
+}
+.relevant-line[data-v-993471e7] { stroke: var(--svs-relevance); stroke-width: 5;
+}
+.relevance-key[data-v-993471e7] { fill: var(--svs-relevance); font-size: 22px;
+}
+.coverage-key[data-v-993471e7] { fill: var(--svs-coverage); font-size: 22px;
+}
+.summary-document[data-v-993471e7] { fill: white; stroke: var(--svs-consistency); stroke-width: 1.5;
+}
+.summary-claim rect[data-v-993471e7] { fill: #f7f8f6; stroke: transparent; stroke-width: 1.5; transition: fill 260ms ease, stroke 260ms ease;
+}
+.summary-claim.supported rect[data-v-993471e7] { fill: var(--svs-support-bg); stroke: var(--svs-support);
+}
+.summary-claim.contradicted rect[data-v-993471e7] { fill: var(--svs-contradiction-bg); stroke: var(--svs-contradiction);
+}
+.summary-claim.unsupported rect[data-v-993471e7] { fill: #f0f2ef; stroke: var(--svs-muted); stroke-dasharray: 5 4;
+}
+.claim-label[data-v-993471e7] { fill: var(--svs-ink); font-size: 23px; font-weight: 500;
+}
+.support-cue[data-v-993471e7] { color: var(--svs-support);
+}
+.contradiction-cue[data-v-993471e7] { color: var(--svs-contradiction);
+}
+.no-support-cue[data-v-993471e7] { color: var(--svs-muted);
+}
+.claim-connection[data-v-993471e7] { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round;
+}
+.no-support-cue .claim-connection[data-v-993471e7] { stroke-dasharray: 5 5;
+}
+.judgment-label[data-v-993471e7] { fill: currentColor; font-size: 22px; font-weight: 500;
+}
+@media (prefers-reduced-motion: reduce), print {
+.reveal[data-v-993471e7], .document[data-v-993471e7], .summary-claim rect[data-v-993471e7] { transition: none !important;
+}
+}

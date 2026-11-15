@@ -1,0 +1,23 @@
+
+.results[data-v-b5f13861] { margin-top: 26px;
+}
+.legend[data-v-b5f13861] { display: flex; gap: 36px; font-size: 21px; color: #59665f; margin-bottom: 36px;
+}
+.legend span[data-v-b5f13861] { display: flex; align-items: center; gap: 10px;
+}
+i[data-v-b5f13861] { display: inline-block; width: 22px; height: 14px;
+}
+.baseline[data-v-b5f13861] { background: #a49c92;
+}.canvasobs[data-v-b5f13861] { background: #d76628;
+}
+.charts[data-v-b5f13861] { display: grid; grid-template-columns: 1fr 1fr; gap: 34px;
+}
+h2[data-v-b5f13861] { margin: 0 0 8px; font-size: 30px; color: #693a19;
+}
+svg[data-v-b5f13861] { width: 100%; font-family: inherit; font-size: 17px; fill: #453a32;
+}
+.tick[data-v-b5f13861] { font-size: 15px; fill: #8a827b;
+}.value[data-v-b5f13861] { font-size: 16px;
+}
+.source[data-v-b5f13861] { margin: 30px 0 0; font-size: 19px; color: #77716b;
+}

@@ -1,0 +1,33 @@
+
+.method-overview[data-v-d65ac5df] { min-height: 575px; display: flex; align-items: center;
+}
+.method-flow[data-v-d65ac5df] { display: grid; grid-template-columns: 205px 34px 620px 38px 195px; gap: 15px; align-items: center;
+}
+h2[data-v-d65ac5df] { margin: 0; font-size: 27px; line-height: 1.2; color: #693a19; font-weight: 600;
+}
+.existing p[data-v-d65ac5df], .agent p[data-v-d65ac5df] { font-size: 22px; line-height: 1.45; margin: 18px 0 0; color: #25312f;
+}
+.plus[data-v-d65ac5df], .flow-arrow[data-v-d65ac5df] { font-size: 34px; color: #a26c40; text-align: center;
+}
+.structured[data-v-d65ac5df] { border-top: 4px solid #df6824; padding-top: 16px;
+}
+.subhead[data-v-d65ac5df] { margin: 8px 0 18px; font-size: 19px; color: #59665f;
+}
+dl[data-v-d65ac5df] { margin: 0;
+}
+dl > div[data-v-d65ac5df] { display: grid; grid-template-columns: 215px 1fr; gap: 16px; border-top: 1px solid #e6d7cb; padding: 10px 0;
+}
+dt[data-v-d65ac5df] { font-size: 20px; font-weight: 600; color: #693a19;
+}
+dd[data-v-d65ac5df] { margin: 0; font-size: 21px; line-height: 1.3; color: #25312f;
+}
+small[data-v-d65ac5df] { display: block; margin-top: 5px; font-size: 16px; color: #59665f;
+}
+.mini-canvas[data-v-d65ac5df] { width: 200px; height: 140px; margin-top: 22px; background: #f5f6f7; border: 1px solid #dce0e2; position: relative;
+}
+.mini-canvas > div[data-v-d65ac5df] { position: absolute; width: 78px; height: 78px; display: grid; place-content: center; text-align: center; font-size: 17px; line-height: 1.2;
+}
+.yellow-note[data-v-d65ac5df] { background: #f7d49a; top: 22px; left: 15px;
+}
+.blue-note[data-v-d65ac5df] { background: #8c9fff; top: 44px; left: 106px;
+}
