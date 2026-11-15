@@ -117,7 +117,7 @@ does not commit, push, or deploy anything. Commit the source and published PDF
 together when the content is ready.
 
 The readable HTML CV lives in `../cv/index.html` and is served at `/cv/`.
-The homepage's CV icon and navigation link open this page; its PDF download
+The homepage's CV icon opens this page; its PDF download
 keeps the original `/docs/Resume_Jiahao.pdf` address. Update the HTML and LaTeX
 versions together when changing content. They deliberately share no build
 dependency, so the personal website remains a static HTML/CSS site.
