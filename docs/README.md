@@ -17,6 +17,9 @@ without clicking links; it omits PDF and slide links and their icons.
 
 ## Content sources
 
+- The [Sanghani Center Student Spotlight](https://sanghani.cs.vt.edu/news/2026/sanghani-center-student-spotlight--jiahao-xu.html),
+  published November 11, 2026, supports the Student Spotlight entry under
+  Honors & Recognition. The HTML entry links to the article; the PDF uses plain text.
 - The website and `../../DC_2026VIS/main.tex` in the neighboring project establish
   the current PhD focus: human-AI co-reasoning in shared 2D workspaces.
 - [CanvasObs on arXiv](https://arxiv.org/abs/2610.27176) supplies the title,

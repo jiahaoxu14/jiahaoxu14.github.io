@@ -560,13 +560,54 @@ h3 {
   stroke-linejoin: round;
 }
 
+.honors-section,
 .hobbies-section {
   border-top: 1px solid var(--line);
 }
 
+.honors-layout,
 .hobbies-layout {
   display: grid;
   gap: clamp(1.75rem, 3vw, 2.5rem);
+}
+
+.honors-layout h2 {
+  max-width: none;
+}
+
+.honors-list {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--ink);
+  list-style: none;
+}
+
+.honors-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.honors-list h3 {
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  line-height: 1.2;
+}
+
+.honors-list p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+.honors-list time {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
 }
 
 .hobby-list {
@@ -872,7 +913,7 @@ nav a[aria-current="page"]::after {
   }
 
   nav {
-    gap: 0.65rem;
+    gap: clamp(0.4rem, 2vw, 0.65rem);
   }
 
   nav a {
