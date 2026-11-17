@@ -52,9 +52,8 @@ The CV uses Palatino, a left-aligned header, consistent institution/date columns
 and light section rules. Locations sit beside university names, separate from
 advisor details. Publication entries put title, authors, and venue on
 separate lines. Full author lists and their original order are retained; only
-Jiahao's name is bold within each citation. Publications are grouped as Conference
-Papers, Journal Articles, Workshop Papers, and Preprints, in that order. At the author's
-request, SVS appears once under Conference Papers as an IEEE VIS 2026 full paper,
+Jiahao's name is bold within each citation. Publications are grouped as Conference, Journal, Workshop, and Preprint, in that order. At the author's
+request, SVS appears once under Conference as an IEEE VIS 2026 full paper,
 with a note that it will appear in IEEE TVCG. This reflects the
 [IEEE VIS publication policy](https://lisa.ieeevis.org/year/2026/info/call-participation/call-for-participation/),
 under which full papers are published in a TVCG special issue. No journal volume,
